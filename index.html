@@ -1,6 +1,62 @@
 <html>
-	<head>
-		<title>Hello there!</title>
-	</head>
-	<body></body>
+  <head>
+    <title>Hello there!</title>
+    <style>
+        body{ margin: 0; padding: 0; background: #000; overflow: hidden; }
+        .background { overflow: hidden; position: relative; top: 50px; height: 720px; width: 1280px; margin: 0 auto; }
+        .content { position: absolute; z-index: 10000; width: 100%; }
+        .top { top: 10px;  }
+        .bottom { bottom: 10px; }
+        .threed {
+          text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+        }
+        h1 {
+          font: bold 100px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: white;
+
+          text-align:center;
+        }
+        h2 {
+          font: bold 80px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: white;
+
+          text-align:center;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="top content">
+        <h1 class="threed">John Bubriski</h1>
+      </div>
+      <div class="bottom content">
+        <h2 class="threed">They see me codin', they hatin'!</h2>
+      </div>
+      <div class="background">
+        <object width="1280" height="750">
+          <param name="movie" value="http://www.youtube.com/v/QH2-TGUlwu4?fs=1&amp;hl=en_US&autoplay=1&loop=1"></param>
+          <param name="allowFullScreen" value="true"></param>
+          <param name="wmode" value="transparent"></param>
+          <param name="allowscriptaccess" value="always"></param>
+          <embed  src="http://www.youtube.com/v/QH2-TGUlwu4?fs=1&amp;hl=en_US&autoplay=1&loop=1"
+              type="application/x-shockwave-flash"
+              allowscriptaccess="always"
+              allowfullscreen="true"
+              wmode="transparent"
+              width="1280"
+              height="750">
+          </embed>
+        </object>
+      </div>
+  </body>
 </html>

@@ -24,9 +24,6 @@ I was showing the code to my colleagues when Joey, a friend and former coworker,
 
 _Note: the code below isn't quite complete.  It's just a simple Regex that finds product links on the wishlist page.  There can be other product links on the wishlist page like related products.  Just a heads up._
 
-
-    
-    
     string _regex = "/dp/(.*?)/";
     
     /// <summary>
@@ -50,15 +47,9 @@ _Note: the code below isn't quite complete.  It's just a simple Regex that finds
     
         return productIds;
     }
-    
-
-
 
 And here was his suggested version:
 
-
-    
-    
     private const string WishListRegex = "/dp/(.*?)/";
     
     /// <summary>
@@ -76,35 +67,16 @@ And here was his suggested version:
             yield return match.Groups[1].Value;
         }
     }
-    
-
-
 
 His code returns the exact same results but a few minor differences make it worthwhile.
 
-
-
-
-
-  * **The regex is a constant** - This should make the code a little more efficient by not creating a string every time the Scrape() method is called.
-
-
-  * **Scrape() returns an IEnumerable<string>** - This allows for the next one which is...
-
-
-  * **Scrape() incorporates the _yield_ keyword** - This should make the code much more efficient in certain scenarios.  Instead of creating a List in memory and then returning the entire thing at the end, the method will simply return results as you ask for them.  This should reduce memory consumption and speed things up as well, again, if used correctly.
-
-
+- **The regex is a constant** - This should make the code a little more efficient by not creating a string every time the Scrape() method is called.
+- **Scrape() returns an IEnumerable<string>** - This allows for the next one which is...
+- **Scrape() incorporates the _yield_ keyword** - This should make the code much more efficient in certain scenarios.  Instead of creating a List in memory and then returning the entire thing at the end, the method will simply return results as you ask for them.  This should reduce memory consumption and speed things up as well, again, if used correctly.
 
 But why stop there?  Just make it a one-liner
 
-
-    
-    
     return Regex.Matches(new WebClient().DownloadString(urlToScrape), "/dp/(.*?)/").Cast<match>().ToList().Select(m => m.Groups[1].Value);
-    
-
-
 
 **This is purely for fun. I would never do this except as a joke.**
 

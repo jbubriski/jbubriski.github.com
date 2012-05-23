@@ -17,73 +17,32 @@ tags:
 
 Not going to go into _why_ you should backup, but here is how I handle the things that matter to me: Code, Documents, PC Games, and Photo and Video.
 
-
-
 ## Code
-
-
 
 This one is pretty much a no-brainer for me.  Use [Bitbucket](https://bitbucket.org/) to host your private repositories for free, and use [GitHub](https://github.com/) to host your public ones.
 
-
-
 ## Documents and other miscellaneous files
-
-
 
 Some prefer Microsoft, Google, or another company.  Take your pick (numbers from time of writing):
 
-
-
-
-	
-  * [Microsoft SkyDrive](https://skydrive.live.com) - 7 Gb free
-
-	
-  * [Google Drive](https://drive.google.com/) - 5 Gb free
-
-	
-  * [Dropbox](http://db.tt/Cr4Jtd0) - 2 GB free (plus referral bonuses)
-
-
-
-
+- [Microsoft SkyDrive](https://skydrive.live.com) - 7 Gb free
+- [Google Drive](https://drive.google.com/) - 5 Gb free
+- [Dropbox](http://db.tt/Cr4Jtd0) - 2 GB free (plus referral bonuses)
 
 ## PC Games
 
-
-
 Just use [Steam](http://store.steampowered.com/).
-
-
 
 ## Photo and Video
 
-
-
 I have a [Flickr](http://www.flickr.com) [Pro Account](http://www.flickr.com/account/order).  For $25/year you get:
 
-
-
-	
-  * Unlimited uploads and storage
-
-	
-  * Unlimited sets and collections
-
-	
-  * Access to your original files
-
-	
-  * Stats on your account
-
-	
-  * Ad-free browsing and sharing
-
-	
-  * HD video uploads & playback
-
-
+- Unlimited uploads and storage
+- Unlimited sets and collections
+- Access to your original files
+- Stats on your account
+- Ad-free browsing and sharing
+- HD video uploads & playback
 
 Their upload download procedures aren't super smooth, but I mostly do uploads and the [Flickr Uploadr](http://www.flickr.com/tools/uploadr/) makes that pretty easy.  I tried out [Google's Picasa](https://picasaweb.google.com) a while back, but with my massive collection of family photos it was getting very expensive very fast.
 

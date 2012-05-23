@@ -18,11 +18,9 @@ I forget why I needed to do this, but I was doing some heavy development around 
 
 Anyway, here is the code:
 
-    
     SELECT ca.FormID, ca.FormDisplayName
     FROM CMS_Class cc
     JOIN CMS_AlternativeForm ca ON ca.FormClassID = cc.ClassID
     WHERE cc.ClassName = 'BizForm.ContactUs'
-
 
 Let me know if this helped you!

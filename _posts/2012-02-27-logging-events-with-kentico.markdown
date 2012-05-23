@@ -23,16 +23,12 @@ Developing a custom web part or module and want to log some events into the Kent
 
 Logging Exceptions:
 
-    
     var eventLogProvider = new EventLogProvider();  
     eventLogProvider.LogEvent("E", eventName, ex);
 
-
 Logging Custom Events:
 
-    
     var eventLogProvider = new EventLogProvider();
     eventLogProvider.LogEvent("E", DateTime.Now, "source", "code");
-
 
 FYI, I believe that the `EventLogProvider` has some static methods on it to log events, but I thing they are the more verbose versions of the methods above. Happy logging!

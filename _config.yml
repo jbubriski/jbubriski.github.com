@@ -8,7 +8,6 @@ baseurl: /blog/
 permalink: /:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-auto: true
 pygments: true
 
 # Themes are encouraged to use these universal variables 
@@ -104,7 +103,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-3270898-2'
     getclicky :
       site_id : 
     mixpanel :

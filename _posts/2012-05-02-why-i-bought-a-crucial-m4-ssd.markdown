@@ -20,9 +20,9 @@ tags:
 
 So far I've owned an 80 GB Intel X25-M and I currently own an 115 GB OCZ Vertex 2.  Both drives treated me well, but I was looking for more.  More space, that is.
 
-<span class="caption" title="Intel X25-M SATA Solid State Drive (SSD)"></span>[![](http://www.johnnycode.com/blog/wp-content/uploads/2012/04/Intel-X25-M-SATA-Solid-State-Drive-SSD.png)](http://www.johnnycode.com/blog/wp-content/uploads/2012/04/Intel-X25-M-SATA-Solid-State-Drive-SSD.png)
+![]({{ BASE_PATH }}/assets/images/2012-05-02-why-i-bought-a-crucial-m4-ssd/Intel-X25-M-SATA-Solid-State-Drive-SSD.png "Intel X25-M SATA Solid State Drive (SSD)")
 
-<span class="caption" title="OCZ Vertex 2"></span>[![](http://www.johnnycode.com/blog/wp-content/uploads/2012/04/vertex2_new_angle_1.png)](http://www.johnnycode.com/blog/wp-content/uploads/2012/04/vertex2_new_angle_1.png)
+![]({{ BASE_PATH }}/assets/images/2012-05-02-why-i-bought-a-crucial-m4-ssd/vertex2_new_angle_1.png "OCZ Vertex 2")
 
 ## Why do I need an SSD?
 
@@ -30,7 +30,7 @@ I wont go into the nitty-gritty detail, but here's my take:
 
 My sole machine is a laptop, so I don't have the luxury of multiple drives and [virtually unlimited RAM](http://www.codinghorror.com/blog/2011/01/24-gigabytes-of-memory-ought-to-be-enough-for-anybody.html).  I'm limited to one storage drive, and 8 GB of RAM.  You may be lucky and have a laptop that has an extra drive bay instead of a CD drive, or one that supports more RAM, but that's not me, and that's definitely not everyone.  Take a look at the excerpt from the [Steam Hardware & Software Survey](http://store.steampowered.com/hwsurvey) below (from March 2012).  It's specific to gamers, but even gamers don't have the best machines!  In my situation, I don't feel that 8 GB is enough, and an SSD can help relieve the pain.
 
-<span class="caption" title="Steam Hardware & Software Survey - RAM stats"></span>[![](http://www.johnnycode.com/blog/wp-content/uploads/2012/04/Steam-Hardware-Software-Survey-Google-Chrome_2012-04-25_13-05-02.png)](http://www.johnnycode.com/blog/wp-content/uploads/2012/04/Steam-Hardware-Software-Survey-Google-Chrome_2012-04-25_13-05-02.png)
+![]({{ BASE_PATH }}/assets/images/2012-05-02-why-i-bought-a-crucial-m4-ssd/Steam-Hardware-Software-Survey-Google-Chrome_2012-04-25_13-05-02.png "Steam Hardware & Software Survey - RAM stats")
 
 Another bonus for laptop users is durability.  Apparently these drives can withstand up to 1500 G's worth of shock.  I'm not sure if that is specific to the memory in the drive, or the electronics as well.  Either way, the lack of moving parts should make SSD's significantly more reliable than a spinning disks in the event of a bump, drop, or mischievous 2-year-old.  [Baby Smash anyone](http://www.hanselman.com/babysmash/)?
 

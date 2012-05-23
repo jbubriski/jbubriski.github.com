@@ -36,9 +36,7 @@ Now that we have our new Web Part setup, let's go make a new BizForm.
 
 Create a field in that BizForm that will hold the User ID.  Set the Default Value property to be this macro so that the User ID is filled automatically:
 
-{% raw %}
 	{<span></span>%cmscontext.currentuser.userid%<span></span>}
-{% endraw %}
 
 <span class="caption" title="Create a field to store the User ID"></span>[![Create a field to store the User ID](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/04-Create-a-field-to-store-the-User-ID.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/04-Create-a-field-to-store-the-User-ID.jpg)
 

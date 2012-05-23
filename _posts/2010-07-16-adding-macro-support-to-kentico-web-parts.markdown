@@ -38,7 +38,7 @@ And here is the event handler:
             if (!string.IsNullOrEmpty(bizFormInfo.FormRedirectToUrl) && MacroResolver.ContainsMacro(bizFormInfo.FormRedirectToUrl))
             {
                 // Resolve macro expressions in the redirect URL
-                // So you can do something like: {% raw %}{%cmscontext.currentdocument.documentname%}{% endraw %}
+                // So you can do something like: {<span></span>%cmscontext.currentdocument.documentname%<span></span>}
                 UrlHelper.Redirect(ContextResolver.ResolveMacros(bizFormInfo.FormRedirectToUrl));
             }
         }

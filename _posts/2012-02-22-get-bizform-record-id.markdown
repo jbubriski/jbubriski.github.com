@@ -24,18 +24,11 @@ If you're working with [BizForm's](http://www.johnnycode.com/blog/tag/kentico-bi
 
 This code makes some minor assumptions that are hard coded, but could be easily abstracted out:
 
-
-
-	
-  * The BizForm's code name is "ContactUs" with an ID field (Primary Key) of "ContactUsId".
-
-	
-  * I'm using a hard-coded where condition getting the first record. This could easily be changed to pass in another parameter to search on.
-
+- The BizForm's code name is "ContactUs" with an ID field (Primary Key) of "ContactUsId".
+- I'm using a hard-coded where condition getting the first record. This could easily be changed to pass in another parameter to search on.
 
 Without further ado, here's the code:
 
-    
     public int GetRecordId()
     {
         // Given the Code Name of the BizForm and the current site, get the BizForm object.

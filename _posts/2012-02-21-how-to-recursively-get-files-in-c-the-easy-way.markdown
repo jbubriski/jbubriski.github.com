@@ -18,9 +18,7 @@ Need to get all the files contained in a directory, recursively searching throug
 
 Here is how to do it without writing your own recursive function:
 
-    
     var fileNames = Directory.GetFiles(directoryName, "*.*", SearchOption.AllDirectories);
-
 
 That's it! No explicit recusrion required!
 

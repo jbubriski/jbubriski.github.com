@@ -5,6 +5,7 @@ slug: resources
 status: publish
 title: Developer Resources
 wordpress_id: '1083'
+group: misc
 ---
 
 Here is a collection of all the programming / IT related resources I use.  Feel free to leave a comment or contact me with your suggestions!  (I bolded the ones I recommend the most (yeah, there's a lot of them))

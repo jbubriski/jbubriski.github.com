@@ -5,6 +5,7 @@ slug: kentico-cms-custom-settings-module
 status: publish
 title: Settings Module for Kentico CMS
 wordpress_id: '503'
+group: misc
 ---
 
 This module enables Kentico developers to add custom settings to Kentico which can be managed by Site Administrators.  The settings are created in the Development section of the Site Manager, and will appear in the Settings Section of the Site Manager. The idea is to make custom code flexible and configurable.

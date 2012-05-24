@@ -25,7 +25,9 @@
 						<li class="page"><a href="/pages.html">pages</a></li>
 						<li class="category"><a href="/categories.html">categories</a></li>
 						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="about"><a href="/about/">about</a></li>
+                        {% assign group = 'additional_navigation' %}
+                        {% assign pages_list = site.pages %}
+                        {% include JB/pages_list %}
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->

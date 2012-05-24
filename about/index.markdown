@@ -3,8 +3,9 @@ date: '2009-05-10 23:04:44'
 layout: page
 slug: about
 status: publish
-title: About Me
+title: About
 wordpress_id: '164'
+group: additional_navigation
 ---
 
 I'm a well rounded developer currently working on ASP.NET web applications. My weapon (language) of choice is C#, but I'm also fluent in PHP and have a pretty wide breadth of knowledge (I try to anyway).

@@ -5,6 +5,7 @@ slug: achievements
 status: publish
 title: Achievements!
 wordpress_id: '1294'
+group: misc
 ---
 
 ## My Coderwall!

@@ -5,6 +5,7 @@ slug: kentico-tips-and-tricks
 status: publish
 title: Kentico Tips and Tricks
 wordpress_id: '1030'
+group: misc
 ---
 
 Here is a list of some little tips and tricks and helper helper methods. I figured this was a little easier to read/find/reference than individual posts for this type of data.  I'll try and keep things here as accurate as possible, but they may not be complete.  But feel free to give feedback and let me know if there are some gaping holes or terrible mistakes.

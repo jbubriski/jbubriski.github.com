@@ -26,8 +26,6 @@ For part 2, I used iTextSharp to programmatically load the template PDF, perform
 
 Check out the code below:
 
-    
-    
     using System.IO;
     using iTextSharp.text.pdf;
     
@@ -70,6 +68,5 @@ Check out the code below:
             }
         }
     }
-
 
 You can find more information about the iTextSharp project on the [iTextSharp Homepage on SourceForge](http://itextsharp.sourceforge.net/).  Just keep in mind that you may stumble upon Java Examples, but fret not!  Java is very similar to C# so you can easily port the samples as I did.  Just use intellisense to help you find subtle differences in the syntax.

@@ -23,14 +23,11 @@ A week ago I had been looking through some Kentico code and remembered seeing co
 
 Here is the code to register the event handler:
 
-    
     // Put this at the end of the "protected void SetupControl()" method
     viewBiz.OnAfterSave += new CMS.FormControls.BizForm.OnAfterSaveEventHandler(viewBiz_OnAfterSave);
 
-
 And here is the event handler:
 
-    
         protected void viewBiz_OnAfterSave()
         {
             var bizFormInfo = BizFormInfoProvider.GetBizFormInfo(viewBiz.FormName, CMSContext.CurrentSiteID);
@@ -43,29 +40,20 @@ And here is the event handler:
             }
         }
 
-
 By modifying the BizForm code, you can add this macro expression...
 
-    
     {<span></span>%cmscontext.currentdocument.documentname%<span></span>}
-
 
 to your URL redirection value like this...
 
-    
     http://www.example.com/thankyou.aspx?source={<span></span>%cmscontext.currentdocument.documentname%<span></span>}
-
 
 and after filling out a BizForm on this page...
 
-    
     http://www.example.com/form_page.aspx
-
 
 you get redirected to here...
 
-    
     http://www.example.com/thankyou.aspx?source=form_page
-
 
 And that's a wrap!

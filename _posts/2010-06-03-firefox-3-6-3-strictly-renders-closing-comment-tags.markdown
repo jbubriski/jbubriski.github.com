@@ -18,15 +18,22 @@ Apparently Firefox correctly renders the code, and doesn't actually close the co
 
 Here is example. Below are 4 content tags, with separate comment tags in between them. If you're viewing this page in Firefox, then you should see that 2nd comment tag actually visible on the page. If you're in Internet Explorer or Chrome, you wont see anything weird:
 
-Content 1
+<p>Content 1</p>
 
-Content 2
+<!-- Comment 1 -->
 
-Content 4
+<p>Content 2</p>
+
+<!-- Comment 2 ->
+
+<p>Content 3</p>
+
+<!-- Comment 3 -->
+
+<p>Content 4</p>
 
 And here is a complete example HTML page:
 
-    
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     
     <html xmlns="http://www.w3.org/1999/xhtml">

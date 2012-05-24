@@ -13,7 +13,6 @@ tags:
 - Extension Method
 - Strings
 - Syntax Highlighting
-- wordpress
 ---
 
 We needed to truncate a summary down to n number of characters to provide a uniform look and feel.  So I whipped up this extension method to take the current string and truncate to n characters, attach an ellipsis to the end, and optionally keep the last word of the string preserved.  In other words, don't chop the last word in half.
@@ -24,8 +23,6 @@ Lastly, one thing **I'm** not doing is highlighting my code... the below sample 
 
 Here is the code:
 
-    
-    
     public static string Truncate(this string text, int length, string ellipsis, bool keepFullWordAtEnd)
     {
         if (text.IsNullOrEmpty()) return string.Empty;
@@ -41,4 +38,3 @@ Here is the code:
         
         return text + ellipsis;
     }
-    

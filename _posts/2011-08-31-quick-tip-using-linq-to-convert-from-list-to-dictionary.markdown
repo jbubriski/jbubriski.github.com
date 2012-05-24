@@ -16,7 +16,6 @@ Ever need to easily access a collection of items by their key?  Exactly, you us
 
 But how do you easily convert a List to a Dictionary? Just use a little LINQ. Let's say you have a simple class:
 
-    
     public class Stuff
     {
         public int Key { get; set; }
@@ -27,10 +26,8 @@ But how do you easily convert a List to a Dictionary? Just use a little LINQ. Le
         }
     }
 
-
 Here is how you can take a List of Stuff and convert it into a Dictionary with the Key property as the accessor:
 
-    
     var listofStuff = new List
     {
         new Stuff(1),
@@ -40,13 +37,10 @@ Here is how you can take a List of Stuff and convert it into a Dictionary with t
     
     var dictionaryOfStuff = listofStuff.ToDictionary(s => s.Key);
 
-
 No you can access the Stuff objects by their key!
 
-    
     var stuff1 = dictionaryOfStuff[1];
     var stuff2 = dictionaryOfStuff[2];
     var stuff3 = dictionaryOfStuff[3];
-
 
 Nice and easy!

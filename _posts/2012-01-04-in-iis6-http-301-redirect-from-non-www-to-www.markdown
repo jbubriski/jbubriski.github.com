@@ -19,7 +19,7 @@ This article applies to IIS6, but the concept applies to almost any public websi
 
 Create a new website with the same IP and host name as your main website, **but do not include the www**. FYI, I think that IIS will yell at you if you try and create 2 websites with the same IP and host name. I add "redirect" to the end of mine so that I know it's the redirect website.
 
-![]({{ BASE_PATH }}/assets/images/2012-01-04-in-iis6-http-301-redirect-from-non-www-to-www/IIS6-Redirect-website-setup.png "IIS6 Redirect Website Setup")
+![](/assets/images/2012-01-04-in-iis6-http-301-redirect-from-non-www-to-www/IIS6-Redirect-website-setup.png "IIS6 Redirect Website Setup")
 
 Then, in the "Home Directory" tab of the redirect website:
 
@@ -28,7 +28,7 @@ Then, in the "Home Directory" tab of the redirect website:
   3. Check the box that says "The exact URL entered above".
   4. Check the box that says "A permanent redirection for this resource".
 
-![]({{ BASE_PATH }}/assets/images/2012-01-04-in-iis6-http-301-redirect-from-non-www-to-www/IIS6-Website-Settings.png "IIS6 Website Settings")
+![](/assets/images/2012-01-04-in-iis6-http-301-redirect-from-non-www-to-www/IIS6-Website-Settings.png "IIS6 Website Settings")
 
 Now I would test that the non-www version of your website redirects to the www version.  If you want to be 100% sure what is happening, look at the [Net tab in Firebug](http://getfirebug.com/wiki/index.php/Net_Panel) or the [Network tab in the Google Chrome Web Inspector](http://code.google.com/chrome/devtools/docs/network.html).
 

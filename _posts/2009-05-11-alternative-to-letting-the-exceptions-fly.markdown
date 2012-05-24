@@ -14,20 +14,10 @@ tags:
 
 So I was creating a class to do handle the CRUD operations for a type when I was trying to figure out how to return the results.  I could...
 
-
-
-	
-  1. Return a bool, and just assume that the problem was with the database.  But then I don't have the actual cause, and any detailed information.
-
-	
-  2. Return a bool, and use out parameters to store the error.  Then check the out parameters in the case that the return value is false.  But that requires me to create a variable to pass in as the out parameter.
-
-	
-  3. Let the exceptions be thrown, and use a try catch in the calling code.
-
-	
-  4. Do something completely different!  How about create a new generic type to use as the return value?  All I need is a bool for the outcome of the operation, a string for error codes, and whatever else we want!
-
+1. Return a bool, and just assume that the problem was with the database.  But then I don't have the actual cause, and any detailed information.
+2. Return a bool, and use out parameters to store the error.  Then check the out parameters in the case that the return value is false.  But that requires me to create a variable to pass in as the out parameter.
+3. Let the exceptions be thrown, and use a try catch in the calling code.
+4. Do something completely different!  How about create a new generic type to use as the return value?  All I need is a bool for the outcome of the operation, a string for error codes, and whatever else we want!
 
 I like option 4 :)
 

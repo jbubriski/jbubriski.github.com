@@ -18,35 +18,16 @@ Per [jberkhei's reply on this forum post](http://forums.asp.net/p/1247808/235821
 
 Visual Studio 9
 
-
-
-
-C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\ItemTemplatesCache\CSharp\Web\1033
-
-
-
+	C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\ItemTemplatesCache\CSharp\Web\1033
 
 Visual Studio 8
 
-
-
-
-C:\Program Files\Microsoft Visual Studio 8\Common7\IDE\ItemTemplatesCache\Web\CSharp\1033
-
-
+	C:\Program Files\Microsoft Visual Studio 8\Common7\IDE\ItemTemplatesCache\Web\CSharp\1033
 
 Editing these can easily allow you to setup little things that will save you time.
 
-
-
-	
-  1. Always change autoeventwireup to false? (FYI, you can also change this in the machine.config, or the web.config)
-
-	
-  2. Always remove the default method, and replace it with an overload of the OnLoad?
-
-	
-  3. Always need to add using directives for certain namespaces?
-
+1. Always change autoeventwireup to false? (FYI, you can also change this in the machine.config, or the web.config)
+2. Always remove the default method, and replace it with an overload of the OnLoad?
+3. Always need to add using directives for certain namespaces?
 
 Then change the template!

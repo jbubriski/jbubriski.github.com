@@ -17,29 +17,13 @@ A big thanks to all who presented, and to those who organized!
 
 Here are the sessions I attended:
 
-
-
-	
-  1. John Bowen: Visual Studio 2010 features
-
-	
-  2. Joseph Hill: Mono and .NET developers
-
-	
-  3. **Phil Denoncourt**: Localization and Globalization
-
-	
-  4. **Julia Lerman**: Entity Framework POCO
-
-	
-  5. Michael Cummings: ASP.NET MVC Better Practices
-
-	
-  6. Milan Negovan: The Microsoft AJAX JavaScript library
-
-	
-  7. Joseph Anderson: E-Commerce with .NET
-
+1. John Bowen: Visual Studio 2010 features
+2. Joseph Hill: Mono and .NET developers
+3. **Phil Denoncourt**: Localization and Globalization
+4. **Julia Lerman**: Entity Framework POCO
+5. Michael Cummings: ASP.NET MVC Better Practices
+6. Milan Negovan: The Microsoft AJAX JavaScript library
+7. Joseph Anderson: E-Commerce with .NET
 
 All the presentations were great, but I bolded the two speakers whose presentations were particularly enlightening for me.
 

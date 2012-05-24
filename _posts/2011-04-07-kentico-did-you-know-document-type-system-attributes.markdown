@@ -17,32 +17,14 @@ tags:
 
 Did you know that you can create Document Type Attributes that map to System Attributes?  System Attributes are the fields that are inherent to all documents in Kentico, and are _generally_ edited through the Properties tab in the CMS Desk (Some are not editable, and some are hidden entirely).  Here are some System Attributes you might recognize:
 
-
-
-	
-  * NodeAlias
-
-	
-  * NodeAliasPath
-
-	
-  * NodeCustomData
-
-	
-  * DocumentName
-
-	
-  * DocumentMenuCaption
-
-	
-  * DocumentPageTitle
-
-	
-  * DocumentTags
-
-	
-  * DocumentCustomData
-
+- NodeAlias
+- NodeAliasPath
+- NodeCustomData
+- DocumentName
+- DocumentMenuCaption
+- DocumentPageTitle
+- DocumentTags
+- DocumentCustomData
 
 Notice above that there are two type of System Attributes: Node Attributes and Document Attributes.  The difference is that the Node Attributes "live" on the Tree Node object and are stored in the CMS_Tree table while the Document Attributes "live" on the Document object and are stored in the CMS_Document table.
 
@@ -50,7 +32,7 @@ Note: In case you don't know, attributes are the fields on a document type.  I 
 
 If you want to see a System Attribute in action, take a look at the built in Blog Post Document Type "DocumentTags" attribute:
 
-<span class="caption" title="BlogPost DocumentTags System Attribute"></span>[![BlogPost DocumentTags System Attribute](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/BlogPost-DocumentTags-System-Attribute.png)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/BlogPost-DocumentTags-System-Attribute.png)
+![](/assets/images/2011-04-07-kentico-did-you-know-document-type-system-attributes/BlogPost-DocumentTags-System-Attribute.png "BlogPost DocumentTags System Attribute")
 
 Notice that the top options are grayed out.  The field relies on the configuration of the inherited System Attribute.  In this case we have a field called "Tags" that is relying on the "DocumentTags" System Attribute.  While we can't change the fact that it is a "Long Text" attribute type, we can change the field type which dictates the control that is used when interacting with the field.  The Document Type uses the Tag Selector control.
 
@@ -62,261 +44,90 @@ Another way you might use this feature would be to store custom data on every do
 
 Below is a full list of all of the Document Attributes:
 
-
-
-	
-  * DocumentCampaign
-
-	
-  * DocumentCheckedOutByUserID
-
-	
-  * DocumentCheckedOutVersionHistoryID
-
-	
-  * DocumentCheckedOutWhen
-
-	
-  * DocumentContent
-
-	
-  * DocumentCreatedByUserID
-
-	
-  * DocumentCreatedWhen
-
-	
-  * DocumentCulture
-
-	
-  * DocumentCustomData
-
-	
-  * DocumentExtensions
-
-	
-  * DocumentForeignKeyValue
-
-	
-  * DocumentGroupWebParts
-
-	
-  * DocumentID
-
-	
-  * DocumentLastPublished
-
-	
-  * DocumentMenuCaption
-
-	
-  * DocumentMenuClass
-
-	
-  * DocumentMenuClassHighlighted
-
-	
-  * DocumentMenuClassOver
-
-	
-  * DocumentMenuItemHideInNavigation
-
-	
-  * DocumentMenuItemImage
-
-	
-  * DocumentMenuItemImageHighlighted
-
-	
-  * DocumentMenuItemImageOver
-
-	
-  * DocumentMenuItemInactive
-
-	
-  * DocumentMenuItemLeftImage
-
-	
-  * DocumentMenuItemLeftImageHighlighted
-
-	
-  * DocumentMenuItemLeftImageOver
-
-	
-  * DocumentMenuItemRightImage
-
-	
-  * DocumentMenuItemRightImageHighlighted
-
-	
-  * DocumentMenuItemRightImageOver
-
-	
-  * DocumentMenuJavascript
-
-	
-  * DocumentMenuRedirectUrl
-
-	
-  * DocumentMenuStyle
-
-	
-  * DocumentMenuStyleHighlighted
-
-	
-  * DocumentMenuStyleOver
-
-	
-  * DocumentModifiedByUserID
-
-	
-  * DocumentModifiedWhen
-
-	
-  * DocumentName
-
-	
-  * DocumentNamePath
-
-	
-  * DocumentNodeID
-
-	
-  * DocumentPageDescription
-
-	
-  * DocumentPageKeyWords
-
-	
-  * DocumentPageTemplateID
-
-	
-  * DocumentPageTitle
-
-	
-  * DocumentPriority
-
-	
-  * DocumentPublishedVersionHistoryID
-
-	
-  * DocumentPublishFrom
-
-	
-  * DocumentPublishTo
-
-	
-  * DocumentRatings
-
-	
-  * DocumentRatingValue
-
-	
-  * DocumentShowInSiteMap
-
-	
-  * DocumentStylesheetID
-
-	
-  * DocumentTagGroupID
-
-	
-  * DocumentTags
-
-	
-  * DocumentType
-
-	
-  * DocumentUrlPath
-
-	
-  * DocumentUseCustomExtensions
-
-	
-  * DocumentUseNamePathForUrlPath
-
-	
-  * DocumentWebParts
-
-	
-  * DocumentWildcardRule
-
-	
-  * DocumentWorkflowStepID
-
+- DocumentCampaign
+- DocumentCheckedOutByUserID
+- DocumentCheckedOutVersionHistoryID
+- DocumentCheckedOutWhen
+- DocumentContent
+- DocumentCreatedByUserID
+- DocumentCreatedWhen
+- DocumentCulture
+- DocumentCustomData
+- DocumentExtensions
+- DocumentForeignKeyValue
+- DocumentGroupWebParts
+- DocumentID
+- DocumentLastPublished
+- DocumentMenuCaption
+- DocumentMenuClass
+- DocumentMenuClassHighlighted
+- DocumentMenuClassOver
+- DocumentMenuItemHideInNavigation
+- DocumentMenuItemImage
+- DocumentMenuItemImageHighlighted
+- DocumentMenuItemImageOver
+- DocumentMenuItemInactive
+- DocumentMenuItemLeftImage
+- DocumentMenuItemLeftImageHighlighted
+- DocumentMenuItemLeftImageOver
+- DocumentMenuItemRightImage
+- DocumentMenuItemRightImageHighlighted
+- DocumentMenuItemRightImageOver
+- DocumentMenuJavascript
+- DocumentMenuRedirectUrl
+- DocumentMenuStyle
+- DocumentMenuStyleHighlighted
+- DocumentMenuStyleOver
+- DocumentModifiedByUserID
+- DocumentModifiedWhen
+- DocumentName
+- DocumentNamePath
+- DocumentNodeID
+- DocumentPageDescription
+- DocumentPageKeyWords
+- DocumentPageTemplateID
+- DocumentPageTitle
+- DocumentPriority
+- DocumentPublishedVersionHistoryID
+- DocumentPublishFrom
+- DocumentPublishTo
+- DocumentRatings
+- DocumentRatingValue
+- DocumentShowInSiteMap
+- DocumentStylesheetID
+- DocumentTagGroupID
+- DocumentTags
+- DocumentType
+- DocumentUrlPath
+- DocumentUseCustomExtensions
+- DocumentUseNamePathForUrlPath
+- DocumentWebParts
+- DocumentWildcardRule
+- DocumentWorkflowStepID
 
 ...And the Node Attributes
 
-	
-  * IsSecuredNode
-
-	
-  * NodeACLID
-
-	
-  * NodeAlias
-
-	
-  * NodeAliasPath
-
-	
-  * NodeBodyElementAttributes
-
-	
-  * NodeCacheMinutes
-
-	
-  * NodeChildNodesCount
-
-	
-  * NodeClassID
-
-	
-  * NodeCustomData
-
-	
-  * NodeDocType
-
-	
-  * NodeGroupID
-
-	
-  * NodeGUID
-
-	
-  * NodeHeadTags
-
-	
-  * NodeID
-
-	
-  * NodeInheritPageLevels
-
-	
-  * NodeLevel
-
-	
-  * NodeLinkedNodeID
-
-	
-  * NodeName
-
-	
-  * NodeOrder
-
-	
-  * NodeOwner
-
-	
-  * NodeParentID
-
-	
-  * NodeSiteID
-
-	
-  * NodeSKUID
-
-	
-  * RequiresSSL
-
-
+- IsSecuredNode
+- NodeACLID
+- NodeAlias
+- NodeAliasPath
+- NodeBodyElementAttributes
+- NodeCacheMinutes
+- NodeChildNodesCount
+- NodeClassID
+- NodeCustomData
+- NodeDocType
+- NodeGroupID
+- NodeGUID
+- NodeHeadTags
+- NodeID
+- NodeInheritPageLevels
+- NodeLevel
+- NodeLinkedNodeID
+- NodeName
+- NodeOrder
+- NodeOwner
+- NodeParentID
+- NodeSiteID
+- NodeSKUID
+- RequiresSSL

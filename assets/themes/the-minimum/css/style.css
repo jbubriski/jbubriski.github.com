@@ -303,6 +303,10 @@ pre {
 .unit-article ul {
   list-style: square;
 }
+.unit-article ul span.post-date {
+  font-family: Courier;
+  font-size: 0.8em;
+}
 .unit-article ol {
   list-style: decimal;
 }

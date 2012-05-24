@@ -28,13 +28,10 @@ To use them, just place them in your custom code snippets directory, which will 
 
 Here are the snippets that are included in the zip file download:
 
-
 ## C#
-
 
 sql.snippet
 
-    
     var connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
     
     var sqlCommandText = @"
@@ -48,24 +45,17 @@ sql.snippet
         sqlCommand.Connection.Close();
     }
 
-
 void.snippet
 
-    
     private void Go( )
     {
     
     }
 
-
-
-
 ## ASP.NET Markup/HTML/JavaScript
-
 
 jref.snippet
 
-    
     <script type="text/javascript">
     (function ($) {
         $(function () {
@@ -74,20 +64,14 @@ jref.snippet
     })(jQuery);
     </script>
 
-
 jscript.snippet
 
-    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-
 
 txt.snippet
 
-    
     <asp:TextBox runat="server" ID="uxTextBox" />
-
 
 btn.snippet
 
-    
     <asp:Button runat="server" ID="uxButton" Text="Submit" />

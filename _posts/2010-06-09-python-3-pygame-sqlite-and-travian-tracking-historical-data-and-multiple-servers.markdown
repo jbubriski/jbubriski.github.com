@@ -18,45 +18,26 @@ tags:
 
 So I've updated the script to add some useful features.
 
-
-
 ### **UPDATE**
-
-
 
 I've updated the code with the new Travian server names and I incorporated a little bit of error handling in the case that unzipping doesn't produce a file.  I also changed the dictionary of servers to a list of tuples, which keeps the ordering of the servers correct during a loop.  Other than that, the rest of the script is the same.
 
-
-
 ## Historical Data
-
 
 Now I attach a date field (and new primary key) to each row in each data dump so the data doesn't get overridden each day.  This way the data is tracked over time and we will be able run reports that show the server's progression.  You can track how quickly players and alliances progress.  One idea I have is to generate a movie of all the maps that are created.  The possibilities are endless!
 
-
-
 ## Multiple Servers
-
 
 This script wouldn't be that great if it only did one server right?  So now we setup a dictionary of servers in the beginning of the script and iterate over them calling all the methods for each one.  During each iteration, we create a sub-directory in our current folder, and place the server-specific files there.  The SQL files, images and database file for each server are separated from all the others so everything is organized.
 
-
-
 ## Miscellaneous Changes
-
 
 The script now references the gzipped map.sql files on the Travian servers (map.sql.gz).  A minor change, but useful nonetheless.  This might slow down the data processing a little, but the file downloads from the servers should be a lot faster. The map.sql files are simply text files full of SQL INSERT commands and text data compresses nicely.  Looking at a gzipped data file from S1, the file size is 728KB which decompresses to 2,645KB!!!  That is over 3.5 times smaller!  If you're downloading the data from ALL the servers, this will be a huge time/resource saver (I think there are 100's of servers across all the different global domains).
 
-
-
 ## The Code
-
 
 The full code to the updated script is below.  Next up, I'll try and enhance the script to be used as a library.  Currently the script can only be run straight through, but we can make it so that you can utilize individual pieces of the script like an API.  This will allow us to make other scripts that call into our Travian script to track players or alliances. 
 
-
-    
-    
     #!/usr/bin/env python
     
     import os # For working with the file system

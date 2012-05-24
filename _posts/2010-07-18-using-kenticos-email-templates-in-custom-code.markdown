@@ -21,14 +21,12 @@ Kentico has an email template feature that is used in many areas of the CMS.  W
 
 First, let's setup our email template.  Go to the Site Manager -> Development -> Email Templates, and make a new one:
 
-<span class="caption" title="Setting up a New Email Template"></span>[![Setting up a New Email Template](http://www.johnnycode.com/blog/wp-content/uploads/2010/07/Setting-up-a-New-Email-Template.png)](http://www.johnnycode.com/blog/wp-content/uploads/2010/07/Setting-up-a-New-Email-Template.png)
+![](/assets/images/2010-07-18-using-kenticos-email-templates-in-custom-code/Setting-up-a-New-Email-Template.png "Setting up a New Email Template")
 
 Piece of cake.
 
 Now let's create a helper method to making sending emails a little bit easier.  The method below takes the name of an email template, the recipient of the email, the macros to replace, and an event name for loggging. Using those variables, the method gets the template, creates an email message from the template, performs replacements using the macros, and sends the email. If an exception is thrown, the event is logged in Kentico's Event Log.
 
-
-    
     private void SendEmailUsingTemplate(string emailTemplateName, string recipientEmail, string[,] replacements, string eventName)
         {
             // Set resolver
@@ -76,10 +74,8 @@ Now let's create a helper method to making sending emails a little bit easier.  
             }
         }
 
-
 Now that we have the helper method, we can send an email with just a few lines of code:
 
-    
     string emailTemplateName = "WeeklySummary";
     
             string[,] replacements = new string[3, 2];
@@ -96,8 +92,6 @@ Now that we have the helper method, we can send an email with just a few lines o
                 "enduser@example.com",
                 replacements,
                 "Weekly Summary - Sending Emails");
-
-
 
 It couldn't be easier!  Just make sure the string array is the correct size, depending on the number of macros you are replacing. You could easily make the array dynamic if you didn't know beforehand how many macros you might have.
 

@@ -26,7 +26,6 @@ Keep in mind that this is **_simply an example_** of adding custom validation. Â
 
 One last quick note: This example used BizForms, but you can probably apply this same technique to Document Forms and Custom Table Forms.
 
-    
     private void ShowErrorIfParentHasValueAndChildIsEmpty(string fieldAName, string fieldBName, string errorMessage)
     {
         var parentControl = (EditingFormControl)uxBizForm.BasicForm.FieldEditingControls[fieldAName];
@@ -51,16 +50,12 @@ One last quick note: This example used BizForms, but you can probably apply this
         }
     }
 
-
 And here is the wire up code for the event handler (Put this in the SetupControl method):
 
-    
     uxBizForm.OnBeforeValidate += uxBizForm_OnBeforeValidate;
-
 
 And here is the event handler where you can call the validation method from above:
 
-    
     protected void uxBizForm_OnBeforeValidate()
     {
         ShowErrorIfParentHasValueAndChildIsEmpty("FirstName", "LastName", "We don't like John and Aaron and nobody!");

@@ -20,8 +20,7 @@ It has some great ideas.  The customer gets what they want, when they want it (
 
 But then reality kicks in. Let's do a little QA:
 
-Why do we need requirements?
-To put it plainly, requirements are what is required of the system. The features, as well as the limitations. As soon as you remove the requirements, its like trying to hold a bottle of shampoo in your hand... _without the bottle_.  The Developers would lose site of their goal, and the customer would keep trying to move the goal!
+Why do we need requirements? To put it plainly, requirements are what is required of the system. The features, as well as the limitations. As soon as you remove the requirements, its like trying to hold a bottle of shampoo in your hand... _without the bottle_.  The Developers would lose site of their goal, and the customer would keep trying to move the goal!
 
 A better approach than "_screw the requirements_" would be to constantly get feedback from the customer, and consider what they _want _and what they _need_.  In a perfect world, a customer knows what he wants, and the developer knows exactly how to implement it.  Unfortunately that isn't always the case!
 

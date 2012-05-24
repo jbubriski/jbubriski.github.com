@@ -20,14 +20,7 @@ title: 'Python 3 + PyGame, SQLite, and Travian: Generating the World Map'
 wordpress_id: '389'
 ---
 
-### **UPDATE**
-
-
-Oops, forgot to add a sample image of what the script generates.  Added it now!
-
-
 ### Background
-
 
 In the last post I showed you how you could get the Travian game data, load it into SQLite, and then run some simple queries.  Now, I will show you how to take that one step further and use the data to generate a BMP, TGA, PNG, or JPEG image!
 
@@ -35,34 +28,17 @@ First, we need to get [Pygame](http://www.pygame.org/news.html).  Pygame is act
 
 Now that we have PyGame, we start with the old script we had and add a new function for creating the PNG.  I'm saving the image as a PNG, but according to the [PyGame documentation](http://www.pygame.org/docs/ref/image.html#pygame.image.save), you should be able to output your image as BMP, TGA, PNG, or JPEG, simply based on what your file's extension is.
 
-[![Programmatically Generated Travian World Map](http://www.johnnycode.com/blog/wp-content/uploads/2010/06/Programmatically-Generated-Travian-World-Map-300x300.png)](http://www.johnnycode.com/blog/wp-content/uploads/2010/06/Programmatically-Generated-Travian-World-Map.png)
-
-
+![](/assets/images/2010-06-02-python-3-pygame-sqlite-and-travian-generating-the-world-map/Programmatically-Generated-Travian-World-Map-300x300.png "Programmatically Generated Travian World Map")
 
 ### The New Code
 
-
 The function below is the new function that does the work.  It:
 
+- Creates an image surface to work with. (based on the map size)
+- Reads the data back from SQLite.
+- Sets each pixel that has a village to the color red.
+- Saves the image to disk.
 
-
-	
-  * Creates an image surface to work with. (based on the map size)
-
-	
-  * Reads the data back from SQLite.
-
-	
-  * Sets each pixel that has a village to the color red.
-
-	
-  * Saves the image to disk.
-
-
-
-
-    
-    
     def create_map(database_name):
         sql_connection = sqlite3.connect(database_name)
         sql_cursor = sql_connection.cursor()
@@ -112,17 +88,11 @@ The function below is the new function that does the work.  It:
     
         sql_connection.commit()
         sql_connection.close()
-    
-
-
-
 
 ### The Full Code
 
-
 And here is the complete updated code that runs great with my installation of Python 3.12 and PyGame 1.91.  I hope you boys and girls enjoyed the update!
 
-    
     #!/usr/bin/env python
     
     import os # For working with the file system

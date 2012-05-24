@@ -19,8 +19,6 @@ A simple code snippet.  I like to use "using" statements to make sure the variou
 
 Here it is:
 
-    
-    
     var newContent = string.Empty;
     
     using (var stringWriter = new StringWriter())
@@ -35,4 +33,3 @@ Here it is:
     }
     
     return newContent;
-    

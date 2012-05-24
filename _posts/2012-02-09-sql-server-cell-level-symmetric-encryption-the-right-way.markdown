@@ -139,21 +139,21 @@ Below are some of the references and resources I used to write this post.
 
 ### General
 
-[ Good overview of Encryption in SQL Server 2008](http://msdn.microsoft.com/en-us/library/cc278098(v=sql.100).aspx#_Toc189384675)
-[ Encryption Hierarchy](http://msdn.microsoft.com/en-us/library/ms189586(v=sql.100).aspx)
-[ How to: Encrypt a Column of Data](http://msdn.microsoft.com/en-us/library/ms179331(v=sql.100).aspx)
+- [ Good overview of Encryption in SQL Server 2008](http://msdn.microsoft.com/en-us/library/cc278098(v=sql.100).aspx#_Toc189384675)
+- [ Encryption Hierarchy](http://msdn.microsoft.com/en-us/library/ms189586(v=sql.100).aspx)
+- [ How to: Encrypt a Column of Data](http://msdn.microsoft.com/en-us/library/ms179331(v=sql.100).aspx)
 
 ### Backup/Regeneration of Keys and Certificates
 
-[ "Cloning" Symmetric Keys](http://sqlblog.com/blogs/michael_coles/archive/2009/06/17/cloning-symmetric-keys.aspx)
-[ How to: Create Identical Symmetric Keys on Two Servers](http://msdn.microsoft.com/en-us/library/ms366281.aspx)
-[ Deleting and Re-creating Encryption Keys](http://msdn.microsoft.com/en-us/library/ms156010.aspx)
-[ My ServerFault question on the subject](http://serverfault.com/questions/356237/do-i-need-to-back-up-the-sql-server-encryption-password-and-symmetric-key/356303#356303)
+- [ "Cloning" Symmetric Keys](http://sqlblog.com/blogs/michael_coles/archive/2009/06/17/cloning-symmetric-keys.aspx)
+- [ How to: Create Identical Symmetric Keys on Two Servers](http://msdn.microsoft.com/en-us/library/ms366281.aspx)
+- [ Deleting and Re-creating Encryption Keys](http://msdn.microsoft.com/en-us/library/ms156010.aspx)
+- [ My ServerFault question on the subject](http://serverfault.com/questions/356237/do-i-need-to-back-up-the-sql-server-encryption-password-and-symmetric-key/356303#356303)
 
 ### MSDN T-SQL References
 
-[ varbinary](http://msdn.microsoft.com/en-us/library/swbw1ewb(v=vs.80).aspx)
-[ CREATE SYMMETRIC KEY](http://msdn.microsoft.com/en-us/library/ms188357.aspx)
-[ OPEN SYMMETRIC KEY](http://msdn.microsoft.com/en-us/library/ms190499.aspx)
-[ GRANT Symmetric Key Permissions](http://msdn.microsoft.com/en-us/library/ms179887.aspx)
-[ GRANT Certificate Permissions](http://msdn.microsoft.com/en-us/library/ms186278.aspx)
+- [ varbinary](http://msdn.microsoft.com/en-us/library/swbw1ewb(v=vs.80).aspx)
+- [ CREATE SYMMETRIC KEY](http://msdn.microsoft.com/en-us/library/ms188357.aspx)
+- [ OPEN SYMMETRIC KEY](http://msdn.microsoft.com/en-us/library/ms190499.aspx)
+- [ GRANT Symmetric Key Permissions](http://msdn.microsoft.com/en-us/library/ms179887.aspx)
+- [ GRANT Certificate Permissions](http://msdn.microsoft.com/en-us/library/ms186278.aspx)

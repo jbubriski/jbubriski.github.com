@@ -16,8 +16,6 @@ tags:
 
 So I decided to try and use this as a storage mechanism for my snippets of code.  Here is the first one!  How to uninstall and reinstall ASP.NET!  You might need to do this if you start having issues with ASP.NET.
 
-    
-    
     C:\>cd windows\Microsoft.NET\Framework\v2.0.50727
     
     C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727>aspnet_regiis -u
@@ -31,4 +29,3 @@ So I decided to try and use this as a storage mechanism for my snippets of code.
     Finished installing ASP.NET (2.0.50727).
     
     C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727>
-    

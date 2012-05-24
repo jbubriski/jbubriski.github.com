@@ -24,37 +24,37 @@ You can download the files that are used in this article here: [Bizform_continue
 
 First, we'll clone the existing BizForm Web Part.
 
-<span class="caption" title="Cloning the existing BizForm webpart"></span>[![Cloning the existing BizForm webpart](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/01-Cloning-the-existing-BizForm-webpart.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/01-Cloning-the-existing-BizForm-webpart.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/01-Cloning-the-existing-BizForm-webpart.jpg "Cloning the existing BizForm webpart")
 
 We don't need to change anything with the configuration, but we'll use our own set of files for the Web Part.  I will show the code later below, and you can download the zip here: [Bizform_continue Web Part Files](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/Bizform_continue.zip).
 
-<span class="caption" title="Cloning the existing BizForm webpart settings"></span>[![Cloning the existing BizForm webpart settings](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/02-Cloning-the-existing-BizForm-webpart-settings.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/02-Cloning-the-existing-BizForm-webpart-settings.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/02-Cloning-the-existing-BizForm-webpart-settings.jpg "Cloning the existing BizForm webpart settings")
 
 Now that we have our new Web Part setup, let's go make a new BizForm.
 
-<span class="caption" title="Create a new BizForm"></span>[![Create a new BizForm](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/03-Create-a-new-BizForm.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/03-Create-a-new-BizForm.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/03-Create-a-new-BizForm.jpg "Create a new BizForm")
 
 Create a field in that BizForm that will hold the User ID.  Set the Default Value property to be this macro so that the User ID is filled automatically:
 
 	{<span></span>%cmscontext.currentuser.userid%<span></span>}
 
-<span class="caption" title="Create a field to store the User ID"></span>[![Create a field to store the User ID](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/04-Create-a-field-to-store-the-User-ID.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/04-Create-a-field-to-store-the-User-ID.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/04-Create-a-field-to-store-the-User-ID.jpg "Create a field to store the User ID")
 
 Make sure you don't show the field on the public form!  We want to rely on the macro to tell us who is editing a row.  My crappy screenshot above has it selected, but just de-select it and re-save if you already saved the field.
 
-<span class="caption" title="Don't show the field on the pulic form"></span>[![Don't show the field on the pulic form](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/05-Dont-show-the-field-on-the-pulic-form.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/05-Dont-show-the-field-on-the-pulic-form.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/05-Dont-show-the-field-on-the-pulic-form.jpg "Don't show the field on the pulic form")
 
 Now make some other data fields, whatever you want!
 
-<span class="caption" title="Create some more fields to store user data"></span>[![Create some more fields to store user data](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/06-Create-some-more-fields-to-store-user-data.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/06-Create-some-more-fields-to-store-user-data.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/06-Create-some-more-fields-to-store-user-data.jpg "Create some more fields to store user data")
 
 Now that our BizForm is all set, let's add it to a page template.  I am adding mine to the main content area of the home page, just for testing.  Make sure you select our new Web Part, and not the original.
 
-<span class="caption" title="Add our new BizForm Continue Web Part"></span>[![Add our new BizForm Continue Web Part](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/07-Add-our-new-BizForm-Continue-Web-Part.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/07-Add-our-new-BizForm-Continue-Web-Part.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/07-Add-our-new-BizForm-Continue-Web-Part.jpg "Add our new BizForm Continue Web Part")
 
 For the properties, all we really need is the Form Name, but I also set "Display to Roles" to be only authenticated users, since the rows will be tied to a specific user.
 
-<span class="caption" title="Setting the Web part properties of our BizForm Continue"></span>[![Setting the Web part properties of our BizForm Continue](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/08-Setting-the-Web-part-properties-of-our-BizForm-Continue.jpg)](http://www.johnnycode.com/blog/wp-content/uploads/2011/04/08-Setting-the-Web-part-properties-of-our-BizForm-Continue.jpg)
+![](/assets/images/2011-04-19-creating-user-specific-editable-bizforms/08-Setting-the-Web-part-properties-of-our-BizForm-Continue.jpg "Setting the Web part properties of our BizForm Continue")
 
 Now let's take a look at the code.  The only real change is that we added a method that happens before load of the data for the form.  We simply call a method that contains the following code:
 

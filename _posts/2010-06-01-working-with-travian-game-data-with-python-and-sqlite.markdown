@@ -16,20 +16,15 @@ tags:
 
 ### **Update**
 
-
 If there was actually out there who read this and tried the code, it may not have worked properly with Python 3.  I've updated the code against my installation of 3.12 and now it should be working fine.  Somehow, I had an older version of Python installed that was running the code!  Sorry about that!
 
-
 ### Background
-
 
 There was a 40% off any item coupon at Borders this weekend that I probably should have [tweeted](http://twitter.com/jbubriski) about.  In any case, I didn't have any books in mind when we actually went there, so on a whim, I saw a [Manning Publications Co.](http://www.manning.com/) book about Python and grabbed it for $25.  The book is [The Quick Python Book, Second Edition](http://www.amazon.com/gp/product/193518220X?ie=UTF8&tag=johcod-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=193518220X)![](http://www.assoc-amazon.com/e/ir?t=johcod-20&l=as2&o=1&a=193518220X) by [Vern Ceder](http://learnpython.wordpress.com/).  By some act of God I found some time this weekend and managed to get through the first couple chapters.  In order to let the knowledge really soak in, I decided that I would right a working script, and blog about it before getting back to work on Tuesday!  So here we go!
 
 Enter [Travian](http://www.travian.com/)...
 
-
 > Travian is a browser game featuring a world with thousands of other real  players. One begins the game acting as a chief of a tiny village.
-
 
 From there, you build up your village and army, build more villages, form alliances, and attack other players (or be attacked).  A fun game that is constantly in motion.  There are no turns in the game, only waiting for resources to be collected, and troops to march.
 
@@ -37,39 +32,20 @@ One cool thing about the game is that they provide an export of their data, much
 
 So the script I wrote is pretty simple, but I'm proud that I did it so quickly, and on my own!  All it does is:
 
-
-
-	
-  1. Download the map.sql data file.
-
-	
-  2. Try create the table in SQLite if it doesn't exist.
-
-	
-  3. Try to clear the table if it already existed.
-
-	
-  4. Load the data into the table.
-
-	
-  5. Print some basic statistics about the data.
-
+1. Download the map.sql data file.
+2. Try create the table in SQLite if it doesn't exist.
+3. Try to clear the table if it already existed.
+4. Load the data into the table.
+5. Print some basic statistics about the data.
 
 So there you have it!  The code is below and I hope someone actually finds this interesting!  Just in case you're wondering what else you can do with the data, check out this site called [Ttool](http://travian-com.ttool.info).  They take the data from Travian and provide all sorts of impressive statistics about the game.  Something I may do next is setup a scheduled job that runs this script, and add a date column to the data so that I can track the historical data.  We'll see if I have another free moment!
 
 I almost forgot!  In order to run it, you need to have Python 3.x installed.  It is a very quick download and install from Python.org.  After you install it, you can run it by saving the script with a .py extension, opening the command prompt, and typing this:
 
-    
     python "C:\path\to\my\script.py"
-
-
-
 
 ### The Code
 
-
-
-    
     #!/usr/bin/env python
     
     import os # For working with the file system

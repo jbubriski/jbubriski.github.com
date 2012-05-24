@@ -53,7 +53,7 @@ I cringe everytime I write that code because _I shouldn't have to_.  I tried eve
 
 Like regular code snippets, AutoCode snippets allow for templates and replacements, but they also allow _code_ to be run.  Much like a T4 template, they take a template, combine it with some potential input, and generate code from it.  T4 templates are usually added directly to a project or triggered by Visual Studio for the creation of files.  [ASP.NET MVC makes extensive use of T4 Templates](http://blogs.msdn.com/b/webdevtools/archive/2009/01/29/t4-templates-a-quick-start-guide-for-asp-net-mvc-developers.aspx).  AutoCode brings the power of T4 to your fingertips.  When you press Ctrl+Enter it brings up an intellisense-like dialog:
 
-![]({{ BASE_PATH }}/assets/images/2012-05-02-product-review-of-autocode-visual-studio-code-snippets-on-steroids/AutoCode-Intellisense-Dialog.png "AutoCode Intellisense Dialog")
+![](/assets/images/2012-05-02-product-review-of-autocode-visual-studio-code-snippets-on-steroids/AutoCode-Intellisense-Dialog.png "AutoCode Intellisense Dialog")
 
 From there, the dialog will guide you with the available snippet shortcuts and their usage.  The built in snippets cover most general needs like:
 

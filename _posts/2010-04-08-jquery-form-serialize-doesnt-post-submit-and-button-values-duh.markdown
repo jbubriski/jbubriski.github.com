@@ -20,9 +20,6 @@ In case you haven't figured it out (it took me a minute too),  the form submissi
 
 You have a site like StackOverflow, and you have a vote form like this:
 
-
-    
-    
     <form method="post" id="vote_form" action="jquery serialize test.html">
     
     Enter the question you want to vote for:
@@ -33,18 +30,11 @@ You have a site like StackOverflow, and you have a vote form like this:
     
     </form>
 
-
 You hook it up to jQuery like this (this is just one way):
 
-    
     <script type="text/JavaScript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js">
     </script>
-    
-
-
-
-    
-    
+    <script type="text/JavaScript">
     $().ready(function(){
       var vote_form = $('#vote_form');
     
@@ -66,16 +56,13 @@ You hook it up to jQuery like this (this is just one way):
         return false;
       });
     });
-    
-
+    </script>
 
 So what is wrong with this picture?  Look at it again.  Now back to me.  Back to the form.  _Now back to me_.  See how the form.serialize() is just another part of the event handler?  It really has nothing to do with the event handler it is in.  _**Although you would probably never do this**_, you could even wire up the AJAX like this:
 
-    
     $("#question_id").hover(function() {
       // submit the form data via Ajax
     });
-
 
 So when the user moves their mouse over the textbox, the form will automatically be submitted via AJAX (kinda neat)!
 
@@ -83,7 +70,6 @@ So now that we know that the serialize call is unrelated to the actual trigger o
 
 Wire up your event handler to the click events of the buttons in the form, instead of the form submit event.  This will allow you to figure out which element triggered the form submission, and subsequently, you can send that element's value along with the rest of the post data.  Here is an example that will work off the same HTML as above:
 
-    
     <script type="text/JavaScript">
     $().ready(function(){
       var vote_form = $('#vote_form');
@@ -112,18 +98,8 @@ Wire up your event handler to the click events of the buttons in the form, inste
     });
     </script>
 
-
 Hope this explanation helps someone out there.  Here are some of the links that helped me figure this out:
 
-
-
-	
-  * [Google Groups Discussion](http://groups.google.com/group/jquery-en/browse_thread/thread/8f99996a3e15ca6b?pli=1)
-
-	
-  * [jQuery Not Intercepting A Form Submission-ASP.NET MVC Fancybox](http://stackoverflow.com/questions/2083419/jquery-not-intercepting-a-form-submition-asp-net-mvc-fancybox)
-
-	
-  * [ASP.NET MVC Multiple Button in the Same Form](http://weblogs.asp.net/dfindley/archive/2009/05/31/asp-net-mvc-multiple-buttons-in-the-same-form.aspx)
-
-
+- [Google Groups Discussion](http://groups.google.com/group/jquery-en/browse_thread/thread/8f99996a3e15ca6b?pli=1)
+- [jQuery Not Intercepting A Form Submission-ASP.NET MVC Fancybox](http://stackoverflow.com/questions/2083419/jquery-not-intercepting-a-form-submition-asp-net-mvc-fancybox)
+- [ASP.NET MVC Multiple Button in the Same Form](http://weblogs.asp.net/dfindley/archive/2009/05/31/asp-net-mvc-multiple-buttons-in-the-same-form.aspx)

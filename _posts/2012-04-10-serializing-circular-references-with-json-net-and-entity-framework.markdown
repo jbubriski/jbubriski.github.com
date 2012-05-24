@@ -28,7 +28,7 @@ You're building a [RESTful](http://en.wikipedia.org/wiki/Representational_state_
 - Entity Framework Code First (I'm on 4.3.1, available via Nuget)
 - [Newtonsoft JSON.Net](http://james.newtonking.com/pages/json-net.aspx) (I'm on 4.5.1, available via Nuget)
 
-We'll pull the data out of the database using EF and [setup the ASP.NET Web API to use the JSON.Net library to handle serialization/deserialization](http://blogs.msdn.com/b/henrikn/archive/2012/02/18/using-json-net-with-asp-net-web-api.aspx).  To make your life easier you could [use ST4bby to do the heavy lifting and generate your POCO's](http://jbubriski.github.com/ST4bby/).
+We'll pull the data out of the database using EF and [setup the ASP.NET Web API to use the JSON.Net library to handle serialization/deserialization](http://blogs.msdn.com/b/henrikn/archive/2012/02/18/using-json-net-with-asp-net-web-api.aspx).  To make your life easier you could [use ST4bby to do the heavy lifting and generate your POCO's](https://github.com/jbubriski/ST4bby/).
 
 Piece of cake, right?
 

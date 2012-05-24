@@ -20,7 +20,7 @@ tags:
 
 Here is a post I wanted to write a few months ago while I was actively developing [Kentico](http://www.kentico.com/) based websites, but I never got the chance to finish it. The code should be solid, and I'll explain it as best I can.
 
-If you're working with [BizForm's](http://www.johnnycode.com/blog/tag/kentico-bizforms/) programmatically you're going to need to get the ID of a specific row so you can update or delete it. If you know the table structure, there's nothing stopping you from going straight to the database, but if you do it using Kentico API's and queries the code should be more upgrade-friendly.
+If you're working with [BizForm's](http://www.johnnycode.com/tags#kentico-bizforms/) programmatically you're going to need to get the ID of a specific row so you can update or delete it. If you know the table structure, there's nothing stopping you from going straight to the database, but if you do it using Kentico API's and queries the code should be more upgrade-friendly.
 
 This code makes some minor assumptions that are hard coded, but could be easily abstracted out:
 

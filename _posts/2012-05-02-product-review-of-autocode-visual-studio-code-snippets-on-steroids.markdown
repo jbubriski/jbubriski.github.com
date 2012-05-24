@@ -30,7 +30,7 @@ which you (easily) modify to this:
 
 (If you don't know what I'm talking about go try it out now!  RIGHT NOW!  In Visual Studio, in a class block type: "prop <Tab> <Tab>")
 
-Yeah... they're great.  [I've even made a bunch of custom Code Snippets](http://www.johnnycode.com/blog/2010/10/18/some-useful-visual-studio-code-snippets/).  Generally I have ones for:
+Yeah... they're great.  [I've even made a bunch of custom Code Snippets](/2010/10/18/some-useful-visual-studio-code-snippets/).  Generally I have ones for:
 	
 - Inserting tasks comments like "// TODO: ".
 - A jQuery protection function.

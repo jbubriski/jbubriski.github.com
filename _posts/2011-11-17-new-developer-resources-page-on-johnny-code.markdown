@@ -13,4 +13,4 @@ tags:
 - Resources
 ---
 
-I've added a new page called **[Developer Resources](http://www.johnnycode.com/blog/resources/)**.  It's going to be a repository of all of the blogs I read and podcasts I listen to.  It's a work in progress, but most of the podcasts I listen to regularly are up there now.  Feel free to post suggestions!  Most everything there will be programming/IT related.
+I've added a new page called **[Developer Resources](/resources/)**.  It's going to be a repository of all of the blogs I read and podcasts I listen to.  It's a work in progress, but most of the podcasts I listen to regularly are up there now.  Feel free to post suggestions!  Most everything there will be programming/IT related.

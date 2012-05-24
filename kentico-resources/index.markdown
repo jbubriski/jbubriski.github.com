@@ -11,56 +11,20 @@ FYI, I do custom Kentico consulting on the side.  Feel free to contact me on [m
 
 Wakefly offers a full range of website services including design, development, hosting, and even SEO and SEM!  Feel free to check out the [services we offer](http://www.wakefly.com/Solutions/Web-Design-and-Development).
 
-
 ### Kentico Resources
 
-
-
-
-
-	
-  * [Developer Guide](http://www.kentico.com/docs/devguide/index.html)
-
-	
-  * [Blogs](http://devnet.kentico.com/Blogs.aspx)
-
-	
-  * [Knowledge Base](http://devnet.kentico.com/Knowledge-Base.aspx)
-
-	
-  * [FAQ's](http://devnet.kentico.com/FAQs.aspx)
-
-	
-  * [Videos](http://devnet.kentico.com/Videos.aspx)
-
-	
-  * [Markpetplace](http://devnet.kentico.com/Marketplace.aspx)
-
-	
-  * [Bug Tracker](http://devnet.kentico.com/Bugtracker.aspx) - Patch your Kentico Install!!! ([Contact me if you need help](http://www.johnnycode.com/blog/contact-me/))
-
-
-
+- [Developer Guide](http://www.kentico.com/docs/devguide/index.html)
+- [Blogs](http://devnet.kentico.com/Blogs.aspx)
+- [Knowledge Base](http://devnet.kentico.com/Knowledge-Base.aspx)
+- [FAQ's](http://devnet.kentico.com/FAQs.aspx)
+- [Videos](http://devnet.kentico.com/Videos.aspx)
+- [Markpetplace](http://devnet.kentico.com/Marketplace.aspx)
+- [Bug Tracker](http://devnet.kentico.com/Bugtracker.aspx) - Patch your Kentico Install!!! ([Contact me if you need help](http://www.johnnycode.com/blog/contact-me/))
 
 ### 3rd Party Resources
-
-
-
-
-
 	
-  * [This blog (duh)](http://www.johnnycode.com/)
-
-	
-  * [Jeroen Furst, Kentico MVP and Trainer](http://blogs.jeroenfurst.nl/)
-
-	
-  * [Brian McKeiver](http://www.mcbeev.com/)
-
-	
-  * [Kentico Solutions](http://www.kenticosolutions.com/)
-
-	
-  * [Kentico Developer Magazine](http://www.kenticodeveloper.com/) (I don't think this is being maintained anymore)
-
-
+- [This blog (duh)](http://www.johnnycode.com/)
+- [Jeroen Furst, Kentico MVP and Trainer](http://blogs.jeroenfurst.nl/)
+- [Brian McKeiver](http://www.mcbeev.com/)
+- [Kentico Solutions](http://www.kenticosolutions.com/)
+- [Kentico Developer Magazine](http://www.kenticodeveloper.com/) (I don't think this is being maintained anymore)

@@ -1,3 +1,4 @@
+#Derived from https://github.com/tsmango/jekyll_alias_generator/
 module Jekyll
   
   class CategoryGenerator < Generator
@@ -14,22 +15,17 @@ module Jekyll
     end
     
     def generate_redirect(oldPath, url)
-      # If alias_path has an extension, we'll write the alias file
-      # directly to that path.  Otherwise, we'll assume that the
-      # alias_path is a directory, in which case we'll generate an
-      # index.html file.
-      
-      alias_dir = File.extname(url).empty? ? url : File.dirname(url)
-      alias_file = File.extname(url).empty? ? "index.html" : File.basename(url)
+      redirect_dir = File.extname(url).empty? ? url : File.dirname(url)
+      redirect_file = File.extname(url).empty? ? "index.html" : File.basename(url)
 
-      alias_dir = File.join(oldPath, alias_dir)
+      redirect_dir = File.join(oldPath, redirect_dir)
       
-      fs_path_to_dir = File.join(@site.dest, alias_dir)
-      alias_index_path = File.join(alias_dir, alias_file)
+      fs_path_to_dir = File.join(@site.dest, redirect_dir)
+      alias_index_path = File.join(redirect_dir, redirect_file)
 
       FileUtils.mkdir_p(fs_path_to_dir)
 
-      File.open(File.join(fs_path_to_dir, alias_file), 'w') do |file|
+      File.open(File.join(fs_path_to_dir, redirect_file), 'w') do |file|
         file.write(redirect_template(url))
       end
       

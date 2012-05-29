@@ -43,6 +43,7 @@ module Jekyll
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="canonical" href="#{target}"/>
         <meta http-equiv=refresh content="0; url=#{target}" />
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <title>Redirecting to new location...</title>

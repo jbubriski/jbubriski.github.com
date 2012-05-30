@@ -8,13 +8,21 @@ wordpress_id: '164'
 group: additional_navigation
 ---
 
-I'm a well rounded developer currently working on ASP.NET web applications. My weapon (language) of choice is C#, but I'm also fluent in PHP and have a pretty wide breadth of knowledge (I try to anyway).
+## Current employment and activites
+
+I'm a well rounded developer currently working on ASP.NET MVC web applications. My weapon (language) of choice is C#, but I'm also fluent in PHP and have a pretty wide breadth of knowledge (I try to anyway).
+
+I also build indie games at [Frag Castle Games](http://fragcastle.com) with [Jared Barboza](http://codeimpossible.com).  We have a couple titles currently undergoing heavy development.
+
+## Work history
 
 I'm currently a Software Engineer at [Worcester Envelope Company](http://www.worcesterenvelope.com/) where I work on internal business applications.
 
-Previously I was a Senior Software Developer at [Wakefly](http://www.wakefly.com) in Westborough, MA. I install, configure, and develop functionality for various CMS's like Kentico. **I'm also a certified developer and trainer for [Kentico](http://www.kentico.com)**! I've also worked with other CMS's like Sitecore, Sitefinty, DotNetNuke, Ektron, Drupal, Joomla.
+Before that I was a Senior Software Developer at [Wakefly](http://www.wakefly.com) in Westborough, MA. I installed, configured, and developed functionality for various CMS's like Kentico. I'm also a certified developer and trainer for [Kentico](http://www.kentico.com)! I also worked with other CMS's like Sitecore, Sitefinty, DotNetNuke, Ektron, Drupal, Joomla.
 
-Previously I was employed at The Soma Group in Westborough, MA where I worked in both CRM and Life Sciences.  I acted as a member of the professional services team for RightNow technologies implementing various customizations and extensions to their PHP based hosted CRM application.  I also developed Life Sciences applications for multiple customers using C# and Winforms.
+Before that I was a Software Engineer and Application Engineer at The Soma Group in Westborough, MA where I worked on CRM and Life Sciences applications.  I acted as a member of the professional services team for RightNow technologies implementing various customizations and extensions to their PHP based hosted CRM application.  I also developed Life Sciences applications for multiple customers in C# and Winforms.
+
+## Skills
 
 Here are some of the technologies I've worked with:
 

@@ -299,7 +299,7 @@ Like we did with the tag and category pages, we need to setup redirects for each
 
 Take a look at the [redirect plugin on GitHub](https://github.com/jbubriski/jbubriski.github.com/tree/master/_plugins).  If you pull that plugin down into your site, and **disable safe mode**, running Jekyll locally will generate the redirect pages.  After doing that once, you can copy the pages from the output directory back into your main source directory! In my case, I left the plugin in the plugins directory, but it wont actually run when deployed to GitHub.
 
-##<a id="Deployment">Deployment</a>
+## <a id="Deployment">Deployment</a>
 
 Now that we've completed the conversion and cleaned up our site we can finally deploy!  Simply use Git to commit and push your content to your GitHub Pages repo.  Once you push, GitHub will run Jekyll on your content and copy the output to the hosting destination.  If the process is successful, you should receive an email like this one:
 
@@ -335,8 +335,7 @@ Keep in mind that DNS can take a while to propagate.  Notice that I set my TTL t
 
 After DNS has propagated successfully, you should go into your _config.yml file and change the production_url setting from `username.github.com` to your domain name.
 
-<a id="Conclusion" />
-## Conclusion
+## <a id="Conclusion">Conclusion</a>
 
 The verdict?
 

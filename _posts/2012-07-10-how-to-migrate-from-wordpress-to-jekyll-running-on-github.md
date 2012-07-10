@@ -7,8 +7,6 @@ date: 2012-07-10 8:00:00 -04:00
 tags: "Wordpress, Jekyll, Github, Migration, Blogging"
 ---
 
-#How to Migrate from Wordpress to Jekyll Running on Github (on Windows)
-
 This one's for you [Rob](http://datachomp.com/)!
 
 ![](/assets/images/2012-07-10-how-to-migrate-from-wordpress-to-jekyll-on-github/per-robs-tweet.png)

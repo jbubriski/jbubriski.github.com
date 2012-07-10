@@ -299,8 +299,7 @@ Like we did with the tag and category pages, we need to setup redirects for each
 
 Take a look at the [redirect plugin on GitHub](https://github.com/jbubriski/jbubriski.github.com/tree/master/_plugins).  If you pull that plugin down into your site, and **disable safe mode**, running Jekyll locally will generate the redirect pages.  After doing that once, you can copy the pages from the output directory back into your main source directory! In my case, I left the plugin in the plugins directory, but it wont actually run when deployed to GitHub.
 
-<a id="Deployment" />
-## Deployment
+##<a id="Deployment">Deployment</a>
 
 Now that we've completed the conversion and cleaned up our site we can finally deploy!  Simply use Git to commit and push your content to your GitHub Pages repo.  Once you push, GitHub will run Jekyll on your content and copy the output to the hosting destination.  If the process is successful, you should receive an email like this one:
 
@@ -312,7 +311,7 @@ Unforunately, things don't always go as planned. In the event of a failure, you 
 > 
 > unable to run jekyll
 
-Yep, that is the entire email! As you can see, there is no indication to what caused the failure.  This is why it's important to first test your site locally and use the correct settings.  If you get a failure notice, do a search through your content for markup issues, or start removing posts 1 by 1 until you find te culprit(s).  This is how I discovered the leftover caption tags and other weird markup issues.
+Yep, that is the entire email! As you can see, there is no indication to what caused the failure.  This is why it's important to first test your site locally and use the correct settings.  If you get a failure notice, do a search through your content for markup issues, or start removing posts 1 by 1 until you find the culprit(s).  This is how I discovered the leftover caption tags and other weird markup issues.
 
 ### Setup your CName.
 

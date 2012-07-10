@@ -11,6 +11,8 @@ tags: "Wordpress, Jekyll, Github, Migration, Blogging"
 
 This one's for you [Rob](http://datachomp.com/)!
 
+![](/assets/images/2012-07-10-how-to-migrate-from-wordpress-to-jekyll-on-github/per-robs-tweet.png)
+
 1. [Introduction](#Introduction)
 2. [Setup](#Setup)
 3. [Conversion](#Conversion)
@@ -249,9 +251,9 @@ Markdown parsers should leave HTML content in place, so hopefully you don't have
 
 Jekyll handles certain things differently than Wordpress.  Mainly, your permalinks and category and tag pages may be different.  For me, WordPress was creating a dynamic page for each category and tag.  Jekyll however, creates a single page for each type:
 
-![](/assets/images/2012-05-28-how-to-migrate-from-wordpress-to-jekyll-on-github/tags-tag-list.png)
+![](/assets/images/2012-07-10-how-to-migrate-from-wordpress-to-jekyll-on-github/tags-tag-list.png)
 
-![](/assets/images/2012-05-28-how-to-migrate-from-wordpress-to-jekyll-on-github/tags-tag-posts.png)
+![](/assets/images/2012-07-10-how-to-migrate-from-wordpress-to-jekyll-on-github/tags-tag-posts.png)
 
 Ideally we should setup 301 redirects for these pages, but one thing is for sure: pages are going to be missing.  Until Google re-indexes your site, users may click search result links to the category and tag pages and get 404's.
 
@@ -327,7 +329,7 @@ Once that is done, push it up to GitHub.
 
 Now go to your domain registrar and find the pages where you can edit your host records.  Mine looked like this:
 
-![](/assets/images/2012-05-28-how-to-migrate-from-wordpress-to-jekyll-on-github/Modifying-my-host-records-on-Namecheap.png)
+![](/assets/images/2012-07-11-how-to-migrate-from-wordpress-to-jekyll-on-github/Modifying-my-host-records-on-Namecheap.png)
 
 Set the IP address to be `204.232.175.78` for the A record of a top-level domain.  For subdomains (like www. or blog.) set the CNAME to be [your username].github.com.
 

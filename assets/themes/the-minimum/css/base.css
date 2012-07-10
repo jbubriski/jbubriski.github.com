@@ -151,3 +151,9 @@ No styleguide reference.
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
+
+
+h2 a
+{
+	color: #2D2D2D;
+}

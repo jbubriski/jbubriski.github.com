@@ -50,11 +50,11 @@ Attached is a working sample solution that demonstrates my examples below.
 
 First, create a new ASP.NET MVC 4 project and select the Web API template. I called mine "WebApi":
 
-[![](http://www.johnnycode.com/blog/wp-content/uploads/2012/02/New-ASP.NET-MVC-4-Project-Dialog.png)](http://www.johnnycode.com/blog/wp-content/uploads/2012/02/New-ASP.NET-MVC-4-Project-Dialog.png)
+[![](/assets/images/2012-02-23-consuming-your-own-asp-net-web-api-rest-service/New-ASP.NET-MVC-4-Project-Dialog.png)](/assets/images/2012-02-23-consuming-your-own-asp-net-web-api-rest-service/New-ASP.NET-MVC-4-Project-Dialog.png)
 
 After the solution loads let's make sure that our web service is in an accesible location. Open up the project Properties > Web and then set the Specific Page to be "Values" and the Specific Port to be 9000. We'll reference that port in our test consumer in a minute:
 
-[![](http://www.johnnycode.com/blog/wp-content/uploads/2012/02/Web-API-Project-Settings.png)](http://www.johnnycode.com/blog/wp-content/uploads/2012/02/Web-API-Project-Settings.png)
+[![](/assets/images/2012-02-23-consuming-your-own-asp-net-web-api-rest-service/Web-API-Project-Settings.png)](/assets/images/2012-02-23-consuming-your-own-asp-net-web-api-rest-service/Web-API-Project-Settings.png)
 
 You can test out the default API by just hitting F5. The local web service URL (http://localhost:9000/api/values) should open in your default browser and you should see some XML (The styling may be different in your browser):
 
@@ -140,30 +140,16 @@ Then Add a Reference to System.Net.Http.Formatting and System.Json.
 
 Now you should now have references to:
 
-
-
-	
   * Newtonsoft.Json
-
-	
   * System.Json
-
-	
   * System.Net.Http
-
-	
   * System.Net.Http.Formatting
-
-	
   * System.Net.Http.WebRequest
-
-	
   * WebApi.Dal
-
 
 When we go to test this setup, we want both the WebApi MVC project to run, as well as the WebApi.Tester Console app.  To do that, open up the Solution Properties, check the radio button that says "Multiple startup projects", and set WebApi and WebApi.Tester as startup projects:
 
-[![](http://www.johnnycode.com/blog/wp-content/uploads/2012/02/Setting-Multiple-Startup-Projects-in-Visual-Studio.png)](http://www.johnnycode.com/blog/wp-content/uploads/2012/02/Setting-Multiple-Startup-Projects-in-Visual-Studio.png)
+[![](/assets/images/2012-02-23-consuming-your-own-asp-net-web-api-rest-service/Setting-Multiple-Startup-Projects-in-Visual-Studio.png)](/assets/images/2012-02-23-consuming-your-own-asp-net-web-api-rest-service/Setting-Multiple-Startup-Projects-in-Visual-Studio.png)
 
 Now we are ready to write some code.  Here is a base client class I whipped up that provides a generic interface to the Web API service:
 

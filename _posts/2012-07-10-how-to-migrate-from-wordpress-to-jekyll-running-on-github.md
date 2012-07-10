@@ -194,13 +194,13 @@ Before we deploy the new site to Github, we should make sure it works locally fi
 
 ### Install Ruby
 
-I installed Ruby 1.9.3 using the installer from [RubyInstaller.org](http://rubyinstaller.org/).
+I installed **Ruby 1.9.3 and the Ruby Dev Kit** from [RubyInstaller.org](http://rubyinstaller.org/).  For the Dev Kit, follow the install instructions on the [Ruby Dev Kit Wiki](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit).
 
 ### Install Jekyll
 
 At the time of writing GitHub pages runs on Jekyll 0.11.0, so we should use too.  Double check that the version hasn't changed on the [GitHub Pages documentation page](http://help.github.com/pages/).  To install our specific version, run:
 
-	gem install Jekyll v0.11.0
+	gem install Jekyll -v 0.11.0
 
 Once installed navigate to the directory of your site and run this command:
 
@@ -240,9 +240,6 @@ This isn't perfect, and I actually went back and manually cleaned these tags up.
 
 For syntax parsing issues, look for markdown or liquid syntax characters, and replace them with HTML entity codes:
 
- - braces []
- - curly braces {}
- - curly brace and percent sign {% %}
  
  *(you probably wont have that last one unless you work with [Kentico macros and blogged about it](/2010/07/16/adding-macro-support-to-kentico-web-parts/))*
 

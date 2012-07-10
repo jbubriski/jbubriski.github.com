@@ -53,11 +53,11 @@ Just go to [Github's signup page](https://github.com/signup/free) and create an 
 
 ### Create your Github Pages repo.
 
-Lorem
+GO figure it out yourself.
 
 ### Export your WordPress content
 
-From teh WordPress admin backed, go to `Tools > Export` and export all of your content to an XML file.
+From the WordPress admin backed, go to `Tools > Export` and export all of your content to an XML file.
 
 ### Get Python 2.7.X (Don't get Python 3.X!)
 
@@ -95,25 +95,25 @@ Exitwp needs PyYAML for Reading configuration files and writing YAML headers and
 
 You should see some output like this:
 
-    Downloading/unpacking BeautifulSoup (from -r pip_requirements.txt (line 1))
-      Downloading BeautifulSoup-3.2.1.tar.gz
-      Running setup.py egg_info for package BeautifulSoup
-    
-    Requirement already up-to-date: PyYAML in c:\python27\lib\site-packages (from -r pip_requirements.txt (line 2))
-    Downloading/unpacking html2text (from -r pip_requirements.txt (line 3))
-      Downloading html2text-3.200.3.tar.gz
-      Running setup.py egg_info for package html2text
-    
-    Installing collected packages: BeautifulSoup, html2text
-      Running setup.py install for BeautifulSoup
-    
-      Running setup.py install for html2text
-    
-        Installing html2text-script.py script to C:\Python27\Scripts
-        Installing html2text.exe script to C:\Python27\Scripts
-        Installing html2text.exe.manifest script to C:\Python27\Scripts
-    Successfully installed BeautifulSoup html2text
-    Cleaning up...
+Downloading/unpacking BeautifulSoup (from -r pip_requirements.txt (line 1))
+Downloading BeautifulSoup-3.2.1.tar.gz
+Running setup.py egg_info for package BeautifulSoup
+
+Requirement already up-to-date: PyYAML in c:\python27\lib\site-packages (from -r pip_requirements.txt (line 2))
+Downloading/unpacking html2text (from -r pip_requirements.txt (line 3))
+Downloading html2text-3.200.3.tar.gz
+Running setup.py egg_info for package html2text
+
+Installing collected packages: BeautifulSoup, html2text
+Running setup.py install for BeautifulSoup
+
+Running setup.py install for html2text
+
+Installing html2text-script.py script to C:\Python27\Scripts
+Installing html2text.exe script to C:\Python27\Scripts
+Installing html2text.exe.manifest script to C:\Python27\Scripts
+Successfully installed BeautifulSoup html2text
+Cleaning up...
 
 Now we should be ready to start the conversion.
 
@@ -194,7 +194,7 @@ Before we deploy the new site to Github, we should make sure it works locally fi
 
 ### Install Ruby
 
-I installed Ruby 1.9.3 using the installer from (RubyInstaller.org](http://rubyinstaller.org/).
+I installed Ruby 1.9.3 using the installer from [RubyInstaller.org](http://rubyinstaller.org/).
 
 ### Install Jekyll
 

@@ -3,7 +3,7 @@ layout: post
 title: How to Migrate from WordPress to Jekyll Running on Github
 permalink: how-to-migrate-from-wordpress-to-jekyll-running-on-github.html
 description: How I migrated my blog from WordPress on shared hosting to a Jekyll powered blog on Github Pages.
-date: 2012-06-05 8:00:00 -04:00
+date: 2012-07-10 8:00:00 -04:00
 tags: "Wordpress, Jekyll, Github, Migration, Blogging"
 ---
 

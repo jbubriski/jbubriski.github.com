@@ -316,6 +316,12 @@ Yep, that is the entire email! As you can see, there is no indication to what ca
 
 While I'm happy with the end result, and I felt good migrating off Wordpress, I lost about 75% of my blog traffic in the process, due to my own stupidity.  Before you flip your DNS (int the next section), make sure all your old links still work!.  Mainly, make sure your home page, post pages, category/tag pages, and your RSS/Atom feeds work!  Even after a month or two I didn't realize that my feed (via feedburner) was completely broken!
 
+FYI, this is what happens when you F up DNS and/or your RSS/Atom feed:
+
+![](/assets/images/2012-07-10-how-to-migrate-from-wordpress-to-jekyll-on-github/this-is-what-happens-when-you-f-up-dns.png)
+
+See!  SEE!?!??!
+
 ### Flip the DNS (Setup your CName.)
 
 Once you verify that your site was successfull deployed, let's setup our own custom domain. If you don't have an existing domain, I would recommend [NameCheap](http://www.namecheap.com?aff=32835) (discalimer: my affiliate link).

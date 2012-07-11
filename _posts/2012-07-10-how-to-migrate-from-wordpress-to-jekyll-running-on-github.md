@@ -53,11 +53,11 @@ Just go to [Github's signup page](https://github.com/signup/free) and create an 
 
 ### Create your Github Pages repo.
 
-GO figure it out yourself.
+Follow the [Github Pages setup instructions](https://help.github.com/articles/creating-pages-with-the-automatic-generator).
 
 ### Export your WordPress content
 
-From the WordPress admin backed, go to `Tools > Export` and export all of your content to an XML file.
+From the WordPress admin backend, go to `Tools > Export` and export all of your content to an XML file.
 
 ### Get Python 2.7.X (Don't get Python 3.X!)
 
@@ -79,7 +79,7 @@ pip well install all the dependencies we need for the Python script.
 
 ### Get Exitwp
 
-Exitwp is the script that will convert the WordPress XML file to the Jekyll markdown structure.
+Exitwp is the Python script that will convert the WordPress XML file to the Jekyll markdown structure.
 
 1. Go to the [Exitwp Github page](https://github.com/thomasf/exitwp) and download the source (or clone the repo locally).
 2. Extract the files from the zip you downloaded.  I put mine in `C:\Projects\jbubriski\Wordpress to Jekyll Migration\thomasf-exitwp-ede1dd5`
@@ -95,25 +95,25 @@ Exitwp needs PyYAML for Reading configuration files and writing YAML headers and
 
 You should see some output like this:
 
-Downloading/unpacking BeautifulSoup (from -r pip_requirements.txt (line 1))
-Downloading BeautifulSoup-3.2.1.tar.gz
-Running setup.py egg_info for package BeautifulSoup
-
-Requirement already up-to-date: PyYAML in c:\python27\lib\site-packages (from -r pip_requirements.txt (line 2))
-Downloading/unpacking html2text (from -r pip_requirements.txt (line 3))
-Downloading html2text-3.200.3.tar.gz
-Running setup.py egg_info for package html2text
-
-Installing collected packages: BeautifulSoup, html2text
-Running setup.py install for BeautifulSoup
-
-Running setup.py install for html2text
-
-Installing html2text-script.py script to C:\Python27\Scripts
-Installing html2text.exe script to C:\Python27\Scripts
-Installing html2text.exe.manifest script to C:\Python27\Scripts
-Successfully installed BeautifulSoup html2text
-Cleaning up...
+	Downloading/unpacking BeautifulSoup (from -r pip_requirements.txt (line 1))
+	Downloading BeautifulSoup-3.2.1.tar.gz
+	Running setup.py egg_info for package BeautifulSoup
+	
+	Requirement already up-to-date: PyYAML in c:\python27\lib\site-packages (from -r pip_requirements.txt (line 2))
+	Downloading/unpacking html2text (from -r pip_requirements.txt (line 3))
+	Downloading html2text-3.200.3.tar.gz
+	Running setup.py egg_info for package html2text
+	
+	Installing collected packages: BeautifulSoup, html2text
+	Running setup.py install for BeautifulSoup
+	
+	Running setup.py install for html2text
+	
+	Installing html2text-script.py script to C:\Python27\Scripts
+	Installing html2text.exe script to C:\Python27\Scripts
+	Installing html2text.exe.manifest script to C:\Python27\Scripts
+	Successfully installed BeautifulSoup html2text
+	Cleaning up...
 
 Now we should be ready to start the conversion.
 
@@ -124,7 +124,7 @@ Run Exitwp with this command (again, check your Python version):
 
     C:\Python27\python.exe .\exitwp.py
 
-which should producte a structure like this one inside the Exitwp directory:
+which should produce a structure like this one inside the Exitwp directory:
 
 - build
 	- jekyll
@@ -147,7 +147,7 @@ There are a few services out there that can provide a free commenting system.  D
 3. Setup the Disqus plugin (go to the Wordpress Admin Comments section and follow the wizard).
 4. Export comments to Disqus.
 
-They say it can take up to 24 hours for the import to complete, but don't wait up. We can still configure Disqus to work with our Jekyll blog even though the comments aren't live yet.  If you're going to create your own templates, simply grab the Disqus HTML snippet and drop it into the templates.  If you're going to use a bloggin framework like Jekyll Bootstrap, wait until we get to the configuration section where it will take 2 seconds to configure.
+They say it can take up to 24 hours for the import to complete, but don't wait up. We can still configure Disqus to work with our Jekyll blog even though the comments aren't live yet.  If you're going to create your own templates, simply grab the Disqus HTML snippet and drop it into the templates.  If you're going to use a blogging framework like Jekyll Bootstrap, wait until we get to the configuration section where it will take 2 seconds to configure.
 
 ### Jekyll Bootstrap
 
@@ -168,7 +168,7 @@ To get started clone [Jekyll Bootstrap on GitHub](http://github.com/plusjade/jek
 
 From there, you should be able to copy the entire contents of the Jekyll site structure directly on top of your current website that was created by Exitwp. While some of the folders will have the same name, it should be safe to overwrite everything in the directory with the JB files.
 
-The inidvidual files are too numerous to list here, so I'm just going to provide the necessary changes we need to get our blog up and running with as much functionality as is provided out of the box.
+The individual files are too numerous to list here, so I'm just going to provide the necessary changes we need to get our blog up and running with as much functionality as is provided out of the box.
 
 Open up the new _config.yml file in the root of the site that was provided by JB.  The config file uses the YML format which is extremely user friendly.  For our specific use of JB with GitHub Pages, we should set a few config options right off the bat.  Put these settings at the top of your config file:
 
@@ -238,9 +238,8 @@ For the WordPress Image Captions, I ran a simple regex that extracted the captio
 
 This isn't perfect, and I actually went back and manually cleaned these tags up.  I ended up taking the caption text and adding it to to title tag of the image, removing it from the visible portion of the page.
 
-For syntax parsing issues, look for markdown or liquid syntax characters, and replace them with HTML entity codes:
+For syntax parsing issues, look for markdown or liquid syntax characters, and replace them with HTML entity codes.
 
- 
  *(you probably wont have that last one unless you work with [Kentico macros and blogged about it](/2010/07/16/adding-macro-support-to-kentico-web-parts/))*
 
 Markdown parsers should leave HTML content in place, so hopefully you don't have anymore major issues. If you do, feel free to drop a comment about something others might encounter.
@@ -305,7 +304,7 @@ Now that we've completed the conversion and cleaned up our site we can finally d
 
 > Your page has been built. If this is the first time you've pushed, it may take a few minutes to appear, otherwise your changes should appear immediately.
 
-Unforunately, things don't always go as planned. In the event of a failure, you will receive an email like this one:
+Unfortunately, things don't always go as planned. In the event of a failure, you will receive an email like this one:
 
 > The page build failed with the following error:
 > 
@@ -313,7 +312,11 @@ Unforunately, things don't always go as planned. In the event of a failure, you 
 
 Yep, that is the entire email! As you can see, there is no indication to what caused the failure.  This is why it's important to first test your site locally and use the correct settings.  If you get a failure notice, do a search through your content for markup issues, or start removing posts 1 by 1 until you find the culprit(s).  This is how I discovered the leftover caption tags and other weird markup issues.
 
-### Setup your CName.
+### Double check EVERYTHING
+
+While I'm happy with the end result, and I felt good migrating off Wordpress, I lost about 75% of my blog traffic in the process, due to my own stupidity.  Before you flip your DNS (int the next section), make sure all your old links still work!.  Mainly, make sure your home page, post pages, category/tag pages, and your RSS/Atom feeds work!  Even after a month or two I didn't realize that my feed (via feedburner) was completely broken!
+
+### Flip the DNS (Setup your CName.)
 
 Once you verify that your site was successfull deployed, let's setup our own custom domain. If you don't have an existing domain, I would recommend [NameCheap](http://www.namecheap.com?aff=32835) (discalimer: my affiliate link).
 
@@ -327,9 +330,9 @@ Once that is done, push it up to GitHub.
 
 Now go to your domain registrar and find the pages where you can edit your host records.  Mine looked like this:
 
-![](/assets/images/2012-07-11-how-to-migrate-from-wordpress-to-jekyll-on-github/Modifying-my-host-records-on-Namecheap.png)
+![](/assets/images/2012-07-10-how-to-migrate-from-wordpress-to-jekyll-on-github/Modifying-my-host-records-on-Namecheap.png)
 
-Set the IP address to be `204.232.175.78` for the A record of a top-level domain.  For subdomains (like www. or blog.) set the CNAME to be [your username].github.com.
+Set the IP address to be `204.232.175.78` (Github's static IP) for the A record of a top-level domain.  For subdomains (like www. or blog.) set the CNAME to be [your username].github.com.
 
 Keep in mind that DNS can take a while to propagate.  Notice that I set my TTL to 60 seconds.  That will make it easy to fix issues later on if we have any.  Once you've ironed out any DNS issues, set it to something higher like 1800.
 
@@ -343,7 +346,7 @@ The verdict?
 
 But don't take my word for it.  You're looking at a Jekyll powered blog running on GitHub right now!  Browse around the site and check out how it works!
 
-The result of this conversion was reasonable port.  I started with a self hosted Wordpress blog and ended with a Jekyll powered blog running on GitHub pages along with Disqus for comments.  While I didn't really gain much, it was a great experience and I'm now familiar with Jekyll.
+The result of this conversion was reasonable port.  I started with a self hosted Wordpress blog and ended with a Jekyll powered blog running on GitHub pages along with Disqus for comments.  While I didn't really gain much, it was a great experience and I'm now more familiar with Jekyll and Markdown.
 
 Would I recommend Jekyll and GitHub Pages to others?  Here are my official recommendations:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to get JSON from ASP.NET
-permalink: how-to-get-json-from-asp-net.html
+title: Getting JSON from ASP.NET, The Beautiful, The Good, The Bad, The Ugly
+permalink: getting-json-from-asp-net-beautiful-good-bad-ugly.html
 description: How to get JSON data from ASP.NET using WebForms, Handlers, MVC, and Web API
 date: 2012-07-16 8:00:00 -04:00
 tags: "ASP.NET, ASP.NET MVC, ASP.NET Web API, JSON, Web Services, AJAX"
@@ -10,7 +10,7 @@ published: false
 
 Since I started my new job I've been working on some old ASP.NET Web Forms code.  We use a lot of AJAX but we don't use many different approaches to get the data.  For fun, I created [a GitHub project to demonstrate the various ways to get JSON data from the different flavors of ASP.NET](https://github.com/jbubriski/GetJsonFromAspNetExamples/).  Below is a little explanation of the code.
 
-## Using an ASP.NET Web Forms page (.aspx)
+## The Bad: Using an ASP.NET Web Forms page (.aspx)
 
 [The ASP.NET Web Forms Page code-behind on GitHub](https://github.com/jbubriski/GetJsonFromAspNetExamples/blob/master/src/GetJsonFromAspNet/GetJsonFromAspNet/PeoplePage.aspx.cs)
 
@@ -42,7 +42,7 @@ The second example using a a static method with a WebMethod attribute isn't reco
 
 **Thoughts: Try hard to stay away from these 2 approaches!**
 
-## Using an ASP.NET HTTP Handler (.ashx)
+## The Ugly: Using an ASP.NET HTTP Handler (.ashx)
 
 [The ASP.NET HTTP Handler code on GitHub](https://github.com/jbubriski/GetJsonFromAspNetExamples/blob/master/src/GetJsonFromAspNet/GetJsonFromAspNet/PeopleHandler.ashx.cs)
 
@@ -62,7 +62,7 @@ This is a straightforward example that may not be a best practice, but is fairly
 
 **Thoughts: This isn't a bad approach, but it's not the best either.**
 
-## Using an ASP.NET Web Service (.asmx)
+## The Good: Using an ASP.NET Web Service (.asmx)
 
 [The ASP.NET Web Service code on GitHub](https://github.com/jbubriski/GetJsonFromAspNetExamples/blob/master/src/GetJsonFromAspNet/GetJsonFromAspNet/PeopleService.asmx.cs)
 
@@ -94,9 +94,10 @@ This is probably the most widespread one (hopefully).  This is the best way to d
 
 **Thoughts: If you're stuck with a Web Forms site and can't enhance it with MVC controllers, this is your best approach.**
 
-## Using and ASP.NET MVC controller
+## The Beautiful: Using an ASP.NET MVC controller
 
 [The HomeController code on GitHub](https://github.com/jbubriski/GetJsonFromAspNetExamples/blob/master/src/GetJsonFromAspNet/GetJsonFromAspNet/Controllers/HomeController.cs)
+
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -129,7 +130,11 @@ This is probably the most widespread one (hopefully).  This is the best way to d
         }
     }
 
-These examples very similar and they all highlight the simplicity behind ASP.NET MVC and the way results are returned to the client.  The last approach is probably my favorite.  It incorporates both the speed of Json.NET and the power of MVC ActionResults.
+The first example highlights the simplicity behind ASP.NET MVC and the way you "return" data to the client.  It uses the built in Json method to return a JsonResult.  Short and sweet.
+
+The second example is a bit "better" in that it uses the Json.NET library to serialize the data manually.  This should be a lot faster than the built-in serializer.
+
+The last approach is my favorite.  It uses a custom ActionResult type to automatically handle the serialization via Json.NET instead of the built-in serializer.  Short and sweet and fast.
 
 **Thoughts: This is my recommended approach for getting JSON data out of ASP.NET.**
 

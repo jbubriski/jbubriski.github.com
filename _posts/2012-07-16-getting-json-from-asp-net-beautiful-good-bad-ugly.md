@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting JSON from ASP.NET: The Beautiful, the Good, the Bad and the Ugly
-permalink: getting-json-from-asp-net-beautiful-good-bad-ugly.html
+permalink: getting-json-from-asp-net-beautiful-good-bad-ugly
 description: How to get JSON data from ASP.NET using WebForms, Handlers, MVC, and Web API
 date: 2012-07-16 8:00:00 -04:00
 tags: "ASP.NET, ASP.NET MVC, ASP.NET Web API, JSON, Web Services, AJAX"

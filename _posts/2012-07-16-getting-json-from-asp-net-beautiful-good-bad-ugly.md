@@ -5,7 +5,6 @@ permalink: getting-json-from-asp-net-beautiful-good-bad-ugly
 description: How to get JSON data from ASP.NET using WebForms, Handlers, MVC, and Web API
 date: 2012-07-16 8:00:00 -04:00
 tags: "ASP.NET, ASP.NET MVC, ASP.NET Web API, JSON, Web Services, AJAX"
-published: false
 ---
 
 Since I started my new job I've been working on some old ASP.NET Web Forms code.  We use a lot of AJAX but we don't use many different approaches to get the data.  For fun, I created [a GitHub project to demonstrate the various ways to get JSON data from the different flavors of ASP.NET](https://github.com/jbubriski/GetJsonFromAspNetExamples/).  Below is a little explanation of the code.

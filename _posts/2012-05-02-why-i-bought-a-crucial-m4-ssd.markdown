@@ -2,7 +2,6 @@
 date: '2012-05-02 09:00:26'
 layout: post
 slug: why-i-bought-a-crucial-m4-ssd
-status: publish
 title: Why I bought a Crucial M4 SSD
 wordpress_id: '1353'
 categories:

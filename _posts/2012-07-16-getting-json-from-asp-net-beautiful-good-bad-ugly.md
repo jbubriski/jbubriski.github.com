@@ -1,5 +1,5 @@
 ---
-date: 2012-07-16 8:00:00 -04:00
+date: '2012-07-16 8:00:00 -04:00'
 layout: post
 title: Getting JSON from ASP.NET: The Beautiful, the Good, the Bad and the Ugly
 slug: getting-json-from-asp-net-beautiful-good-bad-ugly

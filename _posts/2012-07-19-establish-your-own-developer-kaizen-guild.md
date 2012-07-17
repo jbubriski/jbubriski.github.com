@@ -86,13 +86,28 @@ but instead I saw this:
 
 WTF?
 
-This is MVC right?  Yep.  MVC 3?  Yep.  Just a regular web forms master view?  Yep.  Then what the heck is happening?  I immediately called a meeting of the Eastern Mass. Minds, a coalition of top-notch developers working in various web development roles.  Each member brings their own specialties to the table.  One familiar with the nastiness of ASP.NET quickly began analyzing the issue.  He offers workarounds, considers the possibility of a web forms view engine bug, but then has an epiphany.
+This is MVC right?  Yep.  MVC 3?  Yep.  Just a regular web forms master view?  Yep.  Then what the heck is happening?  I immediately call a meeting of the Developer Kaizen Guild, a coalition of top-notch developers working in various web development roles.  Each member brings their own specialties to the table:
+
+- Jared - .Net, Ruby, JavaScript, Testing
+- Gregg - jQuery, HTML, CSS, Customer Relations
+- Chris J - .NET, HTML, CSS, TCP/IP
+- Mark - Cold Fusion, jQuery, HTML, CSS, SQL, Customer Relations
+- Dave - Architecture, C#, Coding Concepts, Debugging
+- Keith -  C#, VB.NET, JS, HTML, SQL, Customer Relations
+- Joe - Everything under the sun
+- Chris B - Ruby, PHP
+
+Back to the problem at hand... 
+
+Jared, the one most familiar with the seedy underbelly of ASP.NET begins analyzing the issue.  He starts offerings workarounds, considers the possibility of a web forms view engine bug, then has an epiphany.
 
 	oh f***
 	
 	does your <head> have runat="server" or something?
 
-BINGO.  Problem solved.  Total time to solution via the DKG: 10 minutes.  How long would it have been for I had a similar epiphany?  Who knows!
+BINGO.  Problem solved.  Total time to solution via the DKG: 10 minutes.
+
+How long would it have taken for me to have the same realization.  It's hard to say for sure, but at the time I didn't even know where to begin looking, despite my extensive experience with ASP.NET.
 
 ## Take it up a notch
 

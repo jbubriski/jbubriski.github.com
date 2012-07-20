@@ -15,12 +15,16 @@ tags:
 - Runat server
 ---
 
-Much like [Scott Hanselman says you need a "Life's Board of Directors"](http://www.hanselman.com/blog/WhoIsOnYourLifesBoardOfDirectors.aspx?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ScottHanselman+%28Scott+Hanselman+-+ComputerZen.com%29), every *developer* needs to be a part of their own **Developer Kaizen Guild (DKG)** in relation to a group of people we know.
+Much like [Scott Hanselman says you need a "Life's Board of Directors"](http://www.hanselman.com/blog/WhoIsOnYourLifesBoardOfDirectors.aspx?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ScottHanselman+%28Scott+Hanselman+-+ComputerZen.com%29), every *developer* needs to be a part of their own **Developer Kaizen Guild (DKG)**.
 
 
 ## What is a Developer Kaizen Guild (DKG)?
 
-Kaizen is Japanese for "improvement" but is used in the context of *continuous improvement*.  Read [the Kaizen Wikipedia article](http://en.wikipedia.org/wiki/Kaizen) if you want to know more about the philosophy and practices.  A guild "is an association of craftsmen in a particular trade" [according to Wikipedia](http://en.wikipedia.org/wiki/Guild).  So if you put 2 and 2 together, a Developer Kaizen Guild is an association of developers focused on continuous improvement of themselves and their trade.  The full phrase "Developer Kaizen Guild" was coined by a good friend and great developer [Jared Barboza](http://codeimpossible.com).
+Kaizen is Japanese for "improvement" but is used in the context of *continuous improvement*.  Read [the Kaizen Wikipedia article](http://en.wikipedia.org/wiki/Kaizen) if you want to know more about the philosophy and practices.  A guild "is an association of craftsmen in a particular trade" [according to Wikipedia](http://en.wikipedia.org/wiki/Guild).  To build on those definitions, a Developer Kaizen Guild is:
+
+> An tight-knit group of developers focused on continuous improvement of themselves and their trade.
+
+The full phrase "Developer Kaizen Guild" was coined by a good friend and great developer [Jared Barboza](http://codeimpossible.com).
 
 
 ## What are the benefits of a DKG?
@@ -29,17 +33,17 @@ The main benefit of a DKG is the ability to "bounce ideas" off of others.  Havin
 
 Members of the DKG can offer direct support in the form of advice or wisdom. Chances are that someone else in the DKG has experienced a situation similar to yours, or maybe even the ***exact*** situation you're in. The act of explaining your current issues to someone else can often bring self-enlightenment.  How many times have you asked a question only to realize the answer just as the words leave your mouth
 
-The DKG can also provide indirect support.  There is only so much time in the day we can spend learning. Then there are the days where we get bogged down with work and can't even open our RSS feed, let alone monitor the Spolsky's and Atwood's on Twitter.  It's time's like these where the DKG shines.  Even if you didn't have time to hear the latest buzz, someone else did.  The DKG can aggregate notifications about the latest development trends, libraries and practices.
+The DKG can also provide indirect support.  There is only so much time in the day we can spend learning. Then there are the days where we get bogged down with work and can't even open our RSS feed, let alone monitor the Spolsky's and Atwood's on Twitter.  It's times like these where the DKG shines.  Even if you didn't have time to hear the latest buzz, someone else did.  The DKG can aggregate notifications about the latest development trends, libraries and practices.
 
 
 ## Who should be in your DKG?
 
-Take an inventory of your developer friends/co-workers/past-co-workers and identify the ones that are similar to you.  Similar in a sense that they work like you.  They are ***passionate*** about their job.  They want to ***learn***.  They want to ***improve***.  Language and experience are less important.  Generally, programming languages and frameworks are similar enough that experienced developers from different backgrounds can have productive discussions about specific code or patterns.  The more diverse your backgrounds, the greater the overall value of The Guild.
+Take an inventory of your developer friends/co-workers/past-co-workers and identify the ones that are similar to you.  Similar in a sense that they work like you.  They are ***passionate*** about their job.  They want to ***learn***.  They want to ***improve***.  Language and experience are less important.  Generally, programming languages and frameworks are similar enough that experienced developers from different backgrounds can have productive discussions about specific code or patterns.  The more diverse your backgrounds, the greater the overall value of The Guild.  Below I use our DKG as an example of the diversity you should strive for.
 
 
 ## Who needs a DKG?
 
-As I said, every good developer should be a part of a DKG.  In particular, people who would **greatly** benefit from a DKG are people who are lacking support in their daily work!  People who:
+As I said, every good developer should be a part of a DKG.  In particular, people who would **greatly** benefit from a DKG are people lacking support in their daily work.  People who:
 
 - Work from home.
 - Are isolated in a small or 1-person development team.
@@ -52,9 +56,9 @@ This is the make up of our very own DKG.  We have co-workers, remote co-workers,
 
 Everyone's DKG is going to work differently.  Our DKG uses Skype group chat, but there are a multitude of options:
 
-- Skype](http://skype.com) group chat
-- [IRC](http://www.irc.org/) channel (or [Jabbr](http://jabbr.net) for a low friction version)
-- Local [meetups](http://meetup.com)
+- [Skype](http://skype.com) group chat
+- An [IRC](http://www.irc.org/) channel (or [Jabbr](http://jabbr.net) room for a low friction version)
+- Local [meetups](http://meetup.com) or playdates
 - Phone Calls
 
 The nice thing about Skype is that it works on multiple OS', it records messages you miss, supports audio/video conversations, and is free!
@@ -64,7 +68,7 @@ The nice thing about Skype is that it works on multiple OS', it records messages
 
 Here is a real-world example from earlier this week:
 
-In an internal application my company is using a link tag to dynamically load CSS.  We change the href in JavaScript which forces the browser to load the new stylesheet.  This is working great, but I notice a double-load of the same stylesheet in the Network tab in Chrome.  The dynamic link tag is starting with a default value but then some JavaScript immediately updates the href on page load to the same value.  Wanting to prevent that additional request, I remove the default/hard-coded href attribute.
+An internal application my company created is using a link tag to dynamically load CSS.  We change the href in JavaScript which forces the browser to load the new stylesheet.  This is working great, but I notice a double-load of the same stylesheet in the Network tab in Chrome.  The dynamic link tag is starting with a default value but then some JavaScript immediately updates the href on page load to the same value.  Wanting to prevent that additional request, I remove the default/hard-coded href attribute.
 
 This particular app was written in MVC 1 or 2 and upgraded to 3, but the views are still using the Web Forms View Engine. Through my simple change, the markup goes from this:
 
@@ -117,7 +121,7 @@ How long would it have taken for me to have the same realization?  It's hard to 
 
 ## Take it up a notch
 
-Now that you formed a DKG (You did, right?), why not take it up a notch?  Take a look at your DKG roster.  You now have a tight-knit network of like-minded people of varying abilities and skills, all with the goal of continuously improving their skills.  That is a bad-ass combination right there.  Why not apply this awesome force of technical abilities?  Here are some ideas to get you started:
+Now that you formed a DKG (You did, right?), why not take it up a notch?  Take a look at your DKG roster.  You now have a tight-knit network of like-minded people of varying abilities and skills, all with the goal of continuously improving their skills.  **That is a bad-ass combination right there**.  Why not apply this awesome force of cohesive technical abilities?  Here are some ideas to get you started:
 
 - Start a podcast
 - Start an open source project

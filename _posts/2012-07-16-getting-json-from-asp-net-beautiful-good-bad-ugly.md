@@ -16,6 +16,9 @@ tags:
 - AJAX
 ---
 
+**UPDATED**
+Since [ASP.NET 4 has been officially released](http://www.hanselman.com/blog/VisualStudio2012AndNETFramework45IsRELEASEDHeres5MinuteVideosToGetYouUpToSpeedQuick.aspx), I added an example of Web API controller code.
+
 Since I started my new job I've been working on some old ASP.NET Web Forms code.  We use a lot of AJAX but we don't use many different approaches to get the data.  For fun, I created [a GitHub project to demonstrate the various ways to get JSON data from the different flavors of ASP.NET](https://github.com/jbubriski/GetJsonFromAspNetExamples/).  Below is a little explanation of the code.
 
 ## The Bad: Using an ASP.NET Web Forms page (.aspx)
@@ -148,7 +151,18 @@ The last approach is my favorite.  It uses a custom ActionResult type to automat
 
 ## Using an ASP.NET MVC Web API Controller
 
-The newest of the bunch.  ASP.NET Web API offers "restful" web services.  As far as serving up JSON, it's actually a little more cumbersome.  Unfortunately I don't have an example of this right now, but the code should be relatively the same as the MVC Controller code.
+The newest of the bunch.  ASP.NET Web API offers "restful" web services.  As far as serving up JSON, it looks very similar to  an ASP.NET Web Service (.asmx).  The return type of the Web API controller method is our data type, and the serialization is handled by Web API.  The configuration of Web API flexible, but lives outside the individual controller (not shown here).
+
+    public class JsonController : ApiController
+    {
+        public IEnumerable<Person> People()
+        {
+            var peopleRepository = new PeopleRepository();
+            var people = peopleRepository.GetPeople();
+
+            return people;
+        }
+    }
 
 ##Conclusion
 

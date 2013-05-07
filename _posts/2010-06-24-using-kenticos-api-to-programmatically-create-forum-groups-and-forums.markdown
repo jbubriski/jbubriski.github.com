@@ -3,7 +3,7 @@ date: '2010-06-24 13:00:42'
 layout: post
 slug: using-kenticos-api-to-programmatically-create-forum-groups-and-forums
 status: publish
-title: Using Kentico’s API to Programmatically Create Forum Groups and Forums
+title: Using Kentico's API to Programmatically Create Forum Groups and Forums
 wordpress_id: '464'
 categories:
 - Kentico
@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-Building off my last post about [Using Kentico’s API to Programmatically Create a Media Library](http://www.johnnycode.com/blog/2010/06/23/using-kenticos-api-to-programmatically-create-a-media-library/), our customer also needed to have Forum Groups and Forums automatically created when a Kentico Group was created.
+Building off my last post about [Using Kentico's API to Programmatically Create a Media Library](http://www.johnnycode.com/blog/2010/06/23/using-kenticos-api-to-programmatically-create-a-media-library/), our customer also needed to have Forum Groups and Forums automatically created when a Kentico Group was created.
 
 A Forum Group in Kentico is the outer forum entity, and the Forums inside that Forum Group are the different areas where people actually post threads. It is a standard online forum configuration.  Forum Groups can be stand alone, or belong to a Community Group. Using the API, we can create Forum Groups and Forums programmatically.
 

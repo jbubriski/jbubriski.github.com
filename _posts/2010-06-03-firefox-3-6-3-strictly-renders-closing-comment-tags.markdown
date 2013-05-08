@@ -24,7 +24,7 @@ Here is example. Below are 4 content tags, with separate comment tags in between
 
 <p>Content 2</p>
 
-<!-- Comment 2 ->
+<!-- Comment 2 -->
 
 <p>Content 3</p>
 

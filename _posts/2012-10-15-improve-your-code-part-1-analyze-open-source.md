@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improve Your Code Part 1: Analyze Open Source
+title: 'Improve Your Code Part 1: Analyze Open Source'
 permalink: improve-your-code-part-1-analyze-open-source
 description: Some Description
 date: 2012-10-03 12:48:54 -04:00

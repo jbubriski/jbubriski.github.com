@@ -11,6 +11,8 @@ tags:
 - Kentico Custom Search Indexes
 - Lucene.net
 - CMS
+- ASP.NET
+- C#
 ---
 
 Kentico's search uses [Lucene.net](http://lucenenet.apache.org/ "Lucene.net Search Engine Library") under the hood to provide a fast and powerful search experience.

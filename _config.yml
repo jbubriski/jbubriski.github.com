@@ -17,6 +17,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # so be sure to set them if your theme uses them.
 #
 title : 'Johnny Code'
+subtitle : 'by John Bubriski'
 tagline: 'Fear No Code'
 author :
   name : 'John Bubriski'

@@ -588,7 +588,6 @@ pre {
 }
 .ie .the-header .logo {
   width: 26.25em;
-  float: left;
 }
 .ie .the-header .nav-global {
   margin-top: 50px;
@@ -765,7 +764,6 @@ pre {
   }
   .the-header .logo {
     width: 26.25em;
-    float: left;
   }
   .the-header .nav-global {
     margin-top: 21px;

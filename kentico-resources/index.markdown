@@ -20,7 +20,7 @@ Wakefly offers a full range of website services including design, development, 
 - [FAQ's](http://devnet.kentico.com/FAQs.aspx)
 - [Videos](http://devnet.kentico.com/Videos.aspx)
 - [Markpetplace](http://devnet.kentico.com/Marketplace.aspx)
-- [Bug Tracker](http://devnet.kentico.com/Bugtracker.aspx) - Patch your Kentico Install!!! ([Contact me if you need help](http://www.johnnycode.com/blog/contact-me/))
+- [Bug Tracker](http://devnet.kentico.com/Bugtracker.aspx) - Patch your Kentico Install!!! ([Contact me if you need help](/contact/index.html))
 
 ### 3rd Party Resources
 	

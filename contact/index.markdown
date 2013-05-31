@@ -8,4 +8,4 @@ wordpress_id: '359'
 group: additional_navigation
 ---
 
-Feel free to contact me on Twitter ([@JohnBubriski](https://twitter.com/#!/JohnBubriski)) with technical questions, about work, or anything else!
+Feel free to contact me on Twitter ([@JohnBubriski](https://twitter.com/JohnBubriski)) with technical questions, about work, or anything else!

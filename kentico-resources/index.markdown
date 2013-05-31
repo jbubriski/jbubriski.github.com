@@ -8,7 +8,7 @@ wordpress_id: '925'
 group: misc
 ---
 
-FYI, I do custom Kentico consulting on the side.  Feel free to contact me on [my contact page](http://www.johnnycode.com/blog/contact-me/).  If I don't have the bandwidth for your project, I'll refer you to my day job employer, [Wakefly](http://www.wakefly.com).
+FYI, I do custom Kentico consulting on the side.  Feel free to contact me on [my contact page](/contact/index.html).  If I don't have the bandwidth for your project, I'll refer you to my day job employer, [Wakefly](http://www.wakefly.com).
 
 Wakefly offers a full range of website services including design, development, hosting, and even SEO and SEM!  Feel free to check out the [services we offer](http://www.wakefly.com/Solutions/Web-Design-and-Development).
 

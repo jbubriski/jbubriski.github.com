@@ -13,7 +13,7 @@ I'm a well rounded full-stack developer currently specializing in C#, JavaScript
 
 ## Current employment and activites
 
-I'm currently a Senior Web Developer at [Virgin HealthMiles](http://virginhealthmiles.com).
+I'm currently a Senior Web Developer at [Wakefly](http://www.wakefly.com).
 
 I also build indie games at [Frag Castle Games](http://fragcastle.com) with [Jared Barboza](http://codeimpossible.com).  We have an upcoming title currently undergoing  development.
 
@@ -30,9 +30,13 @@ In order of proficiency:
 - SQL (SQL Server and MySQL mostly)
 - Python and Ruby - Nothing production worthy, but I've writtena few scripts here and there.
 
+## Accomplishments
+
+I was a speaker at the 2012 [MonkeySpace conference](http://monkeyspace.org/) in Boston, MA. [Jared Barboza](http://codeimpossible.com) and I spoke about Micro-ORM's. [Link to the video on Vimeo](http://vimeo.com/56814733).
+
 ## Frameworks/Tech/Skills
 
-- ASP.NET MVC!  Didn't use v1.0 much, but v2.0 was pretty good and v3.0 is even better!  I love the whole philosophy of MVC, and how clean it can be.  No more ViewState! IOC and DI FTW!
+- ASP.NET MVC!  Didn't use v1 much, but v2 was pretty good and v3 and v4 are even better!  I love the whole philosophy of MVC, and how clean it can be.  No more ViewState! IOC and DI FTW!
 - Entity Framework - I've done multiple projects using EF and have come to like it.  EF 4 and code first are a decent solution!  However, I've come to prefer...
 - [Massive](https://github.com/robconery/massive/) - A fun "Micro ORM" started by [Rob Conery](http://blog.wekeroad.com/helpy-stuff/and-i-shall-call-it-massive) that utilizes the C# 4.0 dynamic keyword.
 - [Dapper](http://code.google.com/p/dapper-dot-net/) - The same "Micro ORM" used by [Stack Overflow](http://stackoverflow.com).
@@ -45,6 +49,23 @@ In order of proficiency:
 
 ## Work history
 
+
+### Wakefly
+**Senior Software Developer, September 2008 - Present**
+
+Installed, configured, and developed functionality for various CMS's like Kentico. Certified as a developer and trainer for [Kentico](http://www.kentico.com)! Also worked with other CMS's like Sitecore, Sitefinty, DotNetNuke, Ektron, Drupal, Joomla.  Also developed custom web applications.
+
+
+### Virgin HealthMiles
+**Senior Web Developer, June, 2012 – November 2012**
+
+C#, ASP.NET MVC, ASP.NET, WCF, Web Services, jQuery
+- Improved the company’s SAAS platform by:
+  - Spearheading the new ASP.NET MVC architecture and Test-Driven Development effort.
+  - Designing and implementing a strategy for globalization, switchable themes and flip branding.
+  - Improving performance with refactoring and caching.
+
+
 ### Worcester Envelope Company
 **Software Engineer, October 2011 - June 2012**
 
@@ -55,12 +76,6 @@ Don't let the name or the dates fool you. Used a wide range of technologies duri
 - Relaunched the company website.
 - Rebuilt the customer portal.
 - Launched a website for the [Envelope Institute of America](http://envelopeinstitute.org).
-
-
-### Wakefly
-**Senior Software Developer, September 2008 - October 2011**
-
-Installed, configured, and developed functionality for various CMS's like Kentico. Certified as a developer and trainer for [Kentico](http://www.kentico.com)! Also worked with other CMS's like Sitecore, Sitefinty, DotNetNuke, Ektron, Drupal, Joomla.  Also developed custom web applications.
 
 
 ### Soma Group

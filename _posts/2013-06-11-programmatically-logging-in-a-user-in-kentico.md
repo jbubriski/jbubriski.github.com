@@ -17,6 +17,6 @@ You're using [Kentico CMS](http://www.kentico.com "Kentico CMS") and you need to
 
 And this is how you would call it:
 
-    CMSContext.AuthenticateUser(salesforceUserInfo.SalesforceUserId, true);
+    CMSContext.AuthenticateUser("my username", true);
 
 Piece of cake!

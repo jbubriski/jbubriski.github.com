@@ -113,3 +113,7 @@ And the following is an example of using the Kentico API to retrieve a list of P
 	}
 
 The only caveat here is that your custom Document Type needs to match the class you created, otherwise things will break.  But that is definitely a risk that is easily mitigated with permissions and educated developers. And if things do need to change, which inevitably they will, Visual Studio and/or ReSharper will help you refactor things with minimal effort.
+
+## But wait, there's more!
+
+If you didn't get nosy already, check out the other files in the samples folder in Kentico's install directory: `C:\Program Files (x86)\KenticoCMS\7.0\CodeSamples\App_Code Samples\Samples\Classes`.  Notice how they have samples for Custom Table Items and Bizform Items!  They essentially follow the same pattern, but with their respective provider classes.  Strongly typed code for everyone! 

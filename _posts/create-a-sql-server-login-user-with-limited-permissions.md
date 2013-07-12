@@ -14,10 +14,10 @@ tags:
 
 People always say you shouldn't use the sa account for your web app, and you shouldn't!  Below is a script to make a login and user for your database with basic CRUD permissions.  If your web app is compromised, damage to the database will be limited to just that database, and not to all the databases running in your SQL Server instance.  While still bad, the attacker would only be able to mess with your data, and wouldn't be able to drop/create tables or other nasty things.
 
-Assuming you have a database name "webapp1", and want a user "phillipjfry" with the password "alphabrainwave":
+Assuming you have a database name "webapp1", and want a user "philipjfry" with the password "deltabrainwave":
 
 	CREATE LOGIN phillipjfry 
-		WITH PASSWORD = 'alphabrainwave';
+		WITH PASSWORD = 'deltabrainwave';
 	
 	USE [webapp1];
 	GO

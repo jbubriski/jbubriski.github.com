@@ -16,18 +16,18 @@ People always say you shouldn't use the sa account for your web app, and you sho
 
 Assuming you have a database name "webapp1", and want a user "phillipjfry" with the password "alphabrainwave":
 
-CREATE LOGIN phillipjfry 
-	WITH PASSWORD = 'alphabrainwave';
-
-USE [webapp1];
-GO
-
-CREATE USER phillipjfry FOR LOGIN phillipjfry
-	WITH DEFAULT_SCHEMA = dbo;
-
-GRANT INSERT TO webapp1;
-GRANT SELECT TO webapp1;
-GRANT UPDATE TO webapp1;
-GRANT DELETE TO webapp1;
-
-GO
+	CREATE LOGIN phillipjfry 
+		WITH PASSWORD = 'alphabrainwave';
+	
+	USE [webapp1];
+	GO
+	
+	CREATE USER phillipjfry FOR LOGIN phillipjfry
+		WITH DEFAULT_SCHEMA = dbo;
+	
+	GRANT INSERT TO webapp1;
+	GRANT SELECT TO webapp1;
+	GRANT UPDATE TO webapp1;
+	GRANT DELETE TO webapp1;
+	
+	GO

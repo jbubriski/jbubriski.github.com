@@ -54,7 +54,7 @@ Check to see if it is set to right framework version. Usually you can look at th
 
 ### Check the Application Pool 32-bit mode support flag
 
-If you get a YSOD (Yellow Screen of Death) about a DLL not loading, or being in the incorrect format, you may need to flip this flag.  If set to false, the site will run in 64-bit mode.  If set to true, the site will run in 32-bit mode.  **Note that "enabling 32-bit mode" will force the site to run in 64-bit mode and it will no longer load 64-bit DLL's.**  So if you're trying to add libraries to a website, you may need to go and download another version.
+If you get a YSOD (Yellow Screen of Death) about a DLL not loading, or being in the incorrect format, you may need to flip this flag.  If set to false, the site will run in 64-bit mode.  If set to true, the site will run in 32-bit mode.  **Note that "enabling 32-bit mode" will force the site to run in 32-bit mode and it will no longer load 64-bit DLL's.**  So if you're trying to add libraries to a website, you may need to go and download another version.
 
 *Commonly seen when using MySQL or SQLite.*
 

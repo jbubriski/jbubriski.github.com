@@ -7,6 +7,7 @@ description: Use the Kentico API to generate a code name for your object.
 categories:
 - Programming
 tags:
+- Kentico
 - Kentico CMS
 - Kentico API Programming
 ---

@@ -1,7 +1,7 @@
 ---
 date: '2013-07-15 8:00:00 -04:00'
 layout: post
-title: Using Strongly Typed Custom Document Type Classes
+title: Using Strongly Typed Custom Document Type Classes in Kentico CMS
 slug: using-strongly-typed-custom-document-type-classes
 description: Create classes that match your custom Document Types and reap the benefits!
 categories:

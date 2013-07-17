@@ -8,6 +8,7 @@ categories:
 - Programming
 tags:
 - Kentico
+- Kentico CMS
 - Kentico Custom Search Indexes
 - Lucene.net
 - CMS

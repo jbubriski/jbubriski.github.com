@@ -8,6 +8,7 @@ categories:
 - Programming
 tags:
 - Kentico
+- Kentico CMS
 - Security
 ---
 

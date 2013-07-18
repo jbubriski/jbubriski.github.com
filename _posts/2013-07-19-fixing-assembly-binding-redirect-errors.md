@@ -1,5 +1,5 @@
 ---
-date: '2013-07-18 8:00:00 -04:00'
+date: '2013-07-19 8:00:00 -04:00'
 layout: post
 title: Fixing Assembly Binding Redirect Issues
 slug: fixing-assembly-binding-redirect-errors
@@ -7,9 +7,10 @@ description: Common solutions to assembly binding redirect errors.
 categories:
 - Programming
 tags:
+- .NET
+- ASP.NET
 - Kentico
 - Kentico CMS
-- Kentico API Programming
 ---
 
 This post is really a compilation of things I've found online, mostly from [Stack Overflow](http://stackoverflow.com).

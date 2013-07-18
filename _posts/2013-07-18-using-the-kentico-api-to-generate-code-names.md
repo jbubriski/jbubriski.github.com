@@ -1,7 +1,7 @@
 ---
 date: '2013-07-18 8:00:00 -04:00'
 layout: post
-title: Using the Kentico API to generate a code name for your object.
+title: Using the Kentico API to generate a code name for your object
 slug: using-the-kentico-api-to-generate-code-names
 description: Use the Kentico API to generate a code name for your object.
 categories:

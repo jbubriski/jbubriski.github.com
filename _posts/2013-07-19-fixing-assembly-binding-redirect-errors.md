@@ -57,7 +57,7 @@ Correct (dash, not equals):
 
 	<runtime>
 	    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
->			...
+			...
 
 ## Check the Namespace on the configuration Element
 

@@ -35,54 +35,46 @@ Here is a collection of all the programming / IT related resources I use.  Feel
 
 ### Programming
 
-**[This Developers Life](http://thisdeveloperslife.com/) (Rob Conery, Scott Hanselman)**
-
-**[Hanselminutes](http://hanselminutes.com/) (Scott Hanselman)**
-
-**[Herding Code](http://herdingcode.com/) (Jon Galloway, Kevin Dente, Scott Koon, K. Scott Allen)**
-
-**[Stack Exchange Podcast](http://blog.stackoverflow.com/category/podcasts/) (Jeff Atwood, Joel Spolsky, Alex Miller)**
-
-**[Stackoverflow Podcast](http://itc.conversationsnetwork.org/series/stackoverflow.html) (Now the Stack Exchange Podcast above)**
-
-**[.NET Rocks](http://www.dotnetrocks.com/) (Carl Franklin, Richard Campbell)**
-
-**[Deep Fried Bytes](http://deepfriedbytes.com/) (Keith Elder, Chris Woodruff)**
-
-**[Yet Another Podcast](http://jesseliberty.com/podcast/) (Jesse Liberty)**
-
-[The JavaScript Show](http://javascriptshow.com/) (Peter Coope, Jason Seifer)
-
-[The Smackdown](http://www.mswhs.com/2010/02/developer-smackdown-podcast-on-whs/) (Mark Nichols, Chris Sells)
-
-[Software Engineering Radio](http://www.se-radio.net/)
-
-[yayQuery](http://yayquery.com/)
-
-[The Official jQuery Podcast](http://podcast.jquery.com/)
-
-[The DevShow](http://5by5.tv/devshow) (Now Retired) (Dan Benjamin, Jason Seifer)
+- **[This Developers Life](http://thisdeveloperslife.com/) (Rob Conery, Scott Hanselman)**
+- **[Hanselminutes](http://hanselminutes.com/) (Scott Hanselman)**
+- **[Herding Code](http://herdingcode.com/) (Jon Galloway, Kevin Dente, Scott Koon, K. Scott Allen)**
+- **[Stack Exchange Podcast](http://blog.stackoverflow.com/category/podcasts/) (Jeff Atwood, Joel Spolsky, Alex Miller)**
+- **[Stackoverflow Podcast](http://itc.conversationsnetwork.org/series/stackoverflow.html) (Now the Stack Exchange Podcast above)**
+- **[.NET Rocks](http://www.dotnetrocks.com/) (Carl Franklin, Richard Campbell)**
+- **[Deep Fried Bytes](http://deepfriedbytes.com/) (Keith Elder, Chris Woodruff)**
+- **[Yet Another Podcast](http://jesseliberty.com/podcast/) (Jesse Liberty)**
+- **[Traffic and Weather](http://trafficandweather.io/) (John Sheehan (Runscope), Steve Marx (Dropbox))**
+- **[Get Up And Code](http://getupandcode.com/) (John Somnez, Iris Classon)**
+- **[HNpod](http://hnpod.com/) (Michael Mahemoff, having been started by Alex Muir)**
+- [The JavaScript Show](http://javascriptshow.com/) (Peter Coope, Jason Seifer)
+- [The Smackdown](http://www.mswhs.com/2010/02/developer-smackdown-podcast-on-whs/) (Mark Nichols, Chris Sells)
+- [Software Engineering Radio](http://www.se-radio.net/)
+- [yayQuery](http://yayquery.com/)
+- [The Official jQuery Podcast](http://podcast.jquery.com/)
+- [The DevShow](http://5by5.tv/devshow) (Now Retired) (Dan Benjamin, Jason Seifer)
 
 
 ### IT
 
-
-[RunAs Radio](http://www.runasradio.com/) (Richard Campbell, Greg Hughes)
-
+- [RunAs Radio](http://www.runasradio.com/) (Richard Campbell, Greg Hughes)
 
 ### General Tech
 
+- **[Ratchet and The Geek]() (Scott Hanselman, Luvie)**
+- [Security Now](http://www.grc.com/securitynow.htm) (Steve Gibson, Leo Laporte)
 
-**[Security Now](http://www.grc.com/securitynow.htm) (Steve Gibson, Leo Laporte)**
+### Game Dev
 
+- **[Lostcast](http://www.lostdecadegames.com/lostcast/) (Geoff Blair, Matt Hackett)**
+- **[Indie Game Development Podcast](http://www.indiegamepod.com/) (?????)**
 
+### Gaming
 
-## All
+- **[The Geekbox](http://www.geekbox.net/) (Ryan Scott, Ryan Higgins, Adam Fitch, Olivia Jane, Justin Haywald)**
 
+### Trivia
 
-I'll organize these into individuals bundles later, but for now, here is the firehose that is my Google Reader.  These are all blogs related to development in someway.  Most would pertain to the .NET developer, but there are definitely some language-agnostic blogs on the list.
-
-(In alphabetical order (Damn you Google Reader and your need to be organized))
+- **[Good Job, Brain!](http://www.goodjobbrain.com/) (Karen Chu, Colin Felton, Dana Nelson, and Chris Kohler)**
 
 
 

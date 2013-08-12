@@ -22,7 +22,7 @@ Now you're ready to add your actual setting.  Add a new settings key.  I named m
 
 Now you should see something like this:
 
-![Creating the custom setting](/assets/images/2013-08-13-using-custom-settings-from-a-macro/creating-the-custom-setting.png)
+![Creating the custom setting](/assets/images/2013-08-13-using-custom-settings-from-a-macro-in-kentico-cms/creating-the-custom-setting.png)
 
 Now under `Site Manager > Settings" you can set the value of your Custom Setting globally and for each site.
 

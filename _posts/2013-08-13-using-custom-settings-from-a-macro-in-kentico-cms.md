@@ -28,12 +28,16 @@ Now under `Site Manager > Settings" you can set the value of your Custom Setting
 
 After setting appropriate values, you can access the Custom Setting through a macro like this:
 
-    {{%Settings.CustomSettings.General.UseDefault#%}}
+{% raw %}
+    {%Settings.CustomSettings.General.UseDefault#%}
+{% endraw %}
 
 As mentioned above, the setting category isn't actually used.  Not sure why it works this way, and why the macro intellisense doesn't really give you what you need, but whatever, this is what works.
 
 Now that you can access your custom setting, you can use it in things like conditionals.  So if you have a Biz Form or Document Type that is shared across sites, you could, for example, set default values per site: 
 
-    {{%if(Settings.CustomSettings.General.UseDefault == "True") { "Default 1" } else { "Default 2" }#%}}
+{% raw %}
+    {%if(Settings.CustomSettings.General.UseDefault == "True") { "Default 1" } else { "Default 2" }#%}
+{% endraw %}
 
 That's it!

@@ -18,13 +18,13 @@ Go to `Site Manager > Development > Custom Settings` and add a new category.  I 
 
 Create a new settings group.  I named mine "General".
 
-Now you're ready to add your actual setting.  Add a new settings key.  I named mine "Use Default" with a code name of "UseDefault".
+Now you're ready to add your actual setting.  Add a new settings key.  I named mine "Use Default" with a code name of "UseDefault".  I set it to be a bool, with everything else as default.
 
 Now you should see something like this:
 
 ![Creating the custom setting](/assets/images/2013-08-13-using-custom-settings-from-a-macro-in-kentico-cms/creating-the-custom-setting.png)
 
-Now under `Site Manager > Settings" you can set the value of your Custom Setting globally and for each site.
+Now under `Site Manager > Settings` you can set the value of your Custom Setting globally and for each site.
 
 After setting appropriate values, you can access the Custom Setting through a macro like this:
 

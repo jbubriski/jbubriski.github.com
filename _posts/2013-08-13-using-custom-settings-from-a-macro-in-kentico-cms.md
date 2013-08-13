@@ -12,7 +12,7 @@ tags:
 - Macros
 ---
 
-Custom settings have been around since 6.0.  While it's not a monumental technical feat and doesn't get much attention, it really improves on the already flexible framework.  Previously, potentially configurable values were hard coded or stored in the web.config.  Try telling a customer that they need to open the web.config to make a simple change!  Not ideal.
+Custom settings have been around since 6.0.  Before that, I had actually developed a [Custom Settings Module](http://johnnycode.com/2010/07/08/introducing-the-custom-settings-module-for-kentico-cms/ "Introducing the Custom Settings Module for Kentico CMS") leveraging Kentico's API's, but it wasn't well tested, and let's face it, it wasn't built in.  While it's not a monumental technical feat and doesn't get much attention, having Custom Settings built in really improves on the already flexible framework.  Previously, potentially configurable values were hard coded or stored in the web.config.  Try telling a customer that they need to open the web.config to make a simple change!  Not ideal.
 
 Now we can simply define custom settings in Kentico that work exactly like the built in settings.  They can be utilized from web parts, modules, events, macros, or almost any other area of the application.
 

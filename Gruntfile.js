@@ -21,12 +21,47 @@ module.exports = function(grunt) {
       //     "assets/themes/the-minimum/css/style.css": "assets/themes/the-minimum/css/style.less"
       //   }
       // }
-    }
+    },
+    cssjoin: {
+      join :{
+        files: {
+          'assets/themes/the-minimum/css/all.css': ['assets/themes/the-minimum/css/style.css']
+        }
+      }
+    },
+    cssmin: {
+      minify: {
+        expand: true,
+        src: ['assets/themes/the-minimum/css/all.css'],
+        ext: '.min.css'
+      }
+    },
+    // uglify: {
+    //   options: {
+    //     // the banner is inserted at the top of the output
+    //     banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+    //   },
+    //   dist: {
+    //     files: {
+    //       'assets/themes/the-minimum/css/all.min.css': ['assets/themes/the-minimum/css/all.css']
+    //     }
+    //   }
+    // }
   });
+  
+  // Tasks
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Load the plugin that provides the "uglify" task.
+  // JS tasks
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+
+  // CSS tasks
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-cssjoin');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['less']);
+  grunt.registerTask('default', ['less', 'cssjoin', 'cssmin']);
 };

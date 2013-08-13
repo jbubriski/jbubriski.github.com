@@ -12,9 +12,17 @@ tags:
 - Macros
 ---
 
+Custom settings have been around since 6.0.  While it's not a monumental technical feat and doesn't get much attention, it really improves on the already flexible framework.  Previously, potentially configurable values were hard coded or stored in the web.config.  Try telling a customer that they need to open the web.config to make a simple change!  Not ideal.
+
+Now we can simply define custom settings in Kentico that work exactly like the built in settings.  They can be utilized from web parts, modules, events, macros, or almost any other area of the application.
+
+*One area that I know does **not** support **any** type of macro are some of the form field settings, like the data source text area for a drop down list type.*
+
 ## Creating a Custom Setting
 
-Go to `Site Manager > Development > Custom Settings` and add a new category.  I named mine "Form Field Defaults', name yours whatever you want. *Note that the category name doesn't matter when referencing the macro.*
+To create your Custom Settings, go to `Site Manager > Development > Custom Settings` and add a new category.  I named mine "Form Field Defaults', name yours whatever you want.
+
+*Note that the category name doesn't matter when referencing the macro.  It's just for organization.*
 
 Create a new settings group.  I named mine "General".
 
@@ -25,6 +33,8 @@ Now you should see something like this:
 ![Creating the custom setting](/assets/images/2013-08-13-using-custom-settings-from-a-macro-in-kentico-cms/creating-the-custom-setting.png)
 
 Now under `Site Manager > Settings` you can set the value of your Custom Setting globally and for each site.
+
+## Using the Custom Setting
 
 After setting appropriate values, you can access the Custom Setting through a macro like this:
 

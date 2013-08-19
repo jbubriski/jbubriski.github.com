@@ -1,7 +1,7 @@
 ---
 date: '2013-08-19 8:00:00 -04:00'
 layout: post
-title: Using C# And SqlBulkCopy To Import CSV Data Into SQL Server 
+title: Using C# And SqlBulkCopy To Import CSV Data Into SQL Server
 slug: using-c-sharp-sqlbulkcopy-to-import-csv-data-sql-server
 description: 
 categories:
@@ -26,24 +26,11 @@ Here are some unscientific benchmarks I did importing data into a Kentico CMS in
 
 Importing 4.6 million rows of IP lookup data (with 6 columns)...
 
-<table>
-	<tr>
-		<td>Kentico CMS API</td>
-		<td>21 hours</td>
-	</tr>
-	<tr>
-		<td>SQL Inserts into live table</td>
-		<td>1 hour</td>
-	</tr>
-	<tr>
-		<td>SqlBulkCopy into temp table, then INSERT INTO live table</td>
-		<td>3 minutes</td>
-	</tr>
-	<tr>
-		<td>SqlBulkCopy into live table, using ColumnMappings to skip PK</td>
-		<td>2 minutes</td>
-	</tr>
-</table>
+
+- **21 hours** - Kentico CMS API
+- **1 hour** - SQL Inserts into live table
+- **3 minutes** - SqlBulkCopy into temp table, then INSERT INTO live table
+- **2 minutes** - SqlBulkCopy into live table, using ColumnMappings to skip PK
 
 Pretty big difference!  First, I tried to use the API to get the data in, because that's the recommended way.  Well, it turns out it wasn't feasible given the amount of data, and the data is simply going into a Custom Table so the API isn't super important.
 

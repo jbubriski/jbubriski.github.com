@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <h1>HTML Form Content Type Tester</h1>
+
+        <p>Below are 4 forms.  Each one utilizes a different "enctype" attribute on the form.</p>
+
+        <h2>Default</h2>
+
+        <form method="POST" action="http://johnnycode.com">
+          <input type="text" name="test_field_1" value="Test" />
+          <input type="text" name="test_field_2" value="!@#$%^&*()_+-=" />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <p>Sample Result:</p>
+
+        <code>test_field_1=Test&amp;test_field_2=%21%40%23%24%25%5E%26*%28%29_%2B-%3D</code>
+
+        <h2>text/plain</h2>
+
+        <form method="POST" action="http://johnnycode.com" enctype="text/plain">
+          <input type="text" name="test_field_1" value="Test" />
+          <input type="text" name="test_field_2" value="!@#$%^&*()_+-=" />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <p>Sample Result:</p>
+
+        <code>test_field_1=Test
+test_field_2=!@#$%^&*()_+-=</code>
+
+        <h2>application/x-www-form-urlencoded</h2>
+        
+        <form method="POST" action="http://johnnycode.com" enctype="application/x-www-form-urlencoded">
+          <input type="text" name="test_field_1" value="Test" />
+          <input type="text" name="test_field_2" value="!@#$%^&*()_+-=" />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <p>Sample Result:</p>
+
+        <code>test_field_1=Test&amp;test_field_2=%21%40%23%24%25%5E%26*%28%29_%2B-%3D</code>
+
+        <h2>multipart/form-data</h2>
+
+        <form method="POST" action="http://johnnycode.com" enctype="multipart/form-data">
+          <input type="text" name="test_field_1" value="Test" />
+          <input type="text" name="test_field_2" value="!@#$%^&*()_+-=" />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <p>Sample Result:</p>
+
+        <code>-----------------------------21204402826745
+Content-Disposition: form-data; name=&quot;test_field_1&quot;
+
+Test
+-----------------------------21204402826745
+Content-Disposition: form-data; name=&quot;test_field_2&quot;
+
+!@#$%^&amp;*()_+-=
+-----------------------------21204402826745--
+</code>
+    </body>
+</html>

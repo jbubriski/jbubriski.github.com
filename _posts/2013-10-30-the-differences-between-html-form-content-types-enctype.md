@@ -15,6 +15,10 @@ tags:
 
 You've probably seen it before.  The `enctype` attribute of an HTML Form element.  But what does it mean?
 
+	<form method="post" enctype="application/x-www-form-urlencoded">
+	...
+	</form>
+
 At least form me, I almost never need to worry about what the content type is for a form.  I use ASP.NET most of the time so this is automatically handled for me.  But what if you're not using a framework that handles this for you, or you're rolling your own, or you need to post data to another system?  Let's see how changing the content type affects the POST.
 
 You can change the content type to one of the following, per the [W3C HTML5 Form spec](http://www.w3.org/TR/html5/forms.html#attr-fs-enctype "Forms in HTML5 Documents"):
@@ -94,5 +98,4 @@ As you can see above, the content type setting can have a drastic difference in 
 
 As I mentioned earlier, this rarely comes up for me.  However, this week I'm working on a PayPal integration and this was *very* important.  In fact, if the content type was wrong on the form that posted payment information to PayPal a generic error would be thrown.  This took me a while to track down since a regular HTML form worked fine, but when an ASP.NET form was pointed at the PayPal endpoint it break.  This led to a **lot** of double-checking of code and values and testing with different parameters.
 
-Eventually it came down to the fact that the form data was identical, but the posts were still giving different results.  That's when I remembered that ASP.NET typically works by having "one form to rule them all" on the page, and JavaScript is used to handle form posts (not AJAX, but JS code is triggered on submit).  At that point I started looking at the details of the Net tab in Firefox, and that's when I noticed the differences in Content Type!
-
+Eventually it came down to the fact that the form data was identical, but the posts were still giving different results.  That's when I remembered that ASP.NET typically works by having "one form to rule them all" on the page, and JavaScript is used to handle form posts (not AJAX, but JS code is triggered on submit).  At that point I started looking at the details of the Net tab in Firefox, and that's when I noticed the differences in Content Type!  In my case the ASP.NET form was using the `multipart/form-data` content type, which PayPal was not cool with.

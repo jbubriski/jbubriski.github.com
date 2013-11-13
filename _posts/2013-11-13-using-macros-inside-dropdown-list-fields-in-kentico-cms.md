@@ -1,5 +1,5 @@
 ---
-date: '2013-10-12 8:00:00 -04:00'
+date: '2013-11-13 8:00:00 -04:00'
 layout: post
 title: Using Macros Inside Dropdown List Fields in Kentico CMS
 slug: using-macros-inside-dropdown-list-fields-in-kentico-cms

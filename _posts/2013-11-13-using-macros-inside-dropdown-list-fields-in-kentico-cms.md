@@ -28,7 +28,7 @@ Why not just ***add*** macro support!?  We'll need to customize Kentico's code, 
 
 In `CMSFormControls/Basic/DropDownListControl.ascx.cs`, add the following using directive to the top of the code file: 
 
-	using CMS.CMSHelper;
+    using CMS.CMSHelper;
 
 And around line 325, add the following code to the LoadAndSelectList() method: 
 
@@ -37,7 +37,7 @@ And around line 325, add the following code to the LoadAndSelectList() method:
 
 The resulting method should look something like this:
 
-	private void LoadAndSelectList()
+    private void LoadAndSelectList()
     {
         if (dropDownList.Items.Count == 0)
         {
@@ -57,7 +57,7 @@ The resulting method should look something like this:
             {
                 DisplayException(ex);
             }
-
+            
             FormHelper.SelectSingleValue(selectedValue, dropDownList);
         }
     }
@@ -66,12 +66,14 @@ The resulting method should look something like this:
 
 The code that we added simply sets the current document's data as a named source called `CurrentDocument`.  Now we can reference other fields in the data source property with a SQL query like this one:
 
-	SELECT ChildId, ChildName
-	FROM customtable_Children
-	WHERE ParentID = {% CurrentDocument.GetValue("ParentId") #%}
-	UNION ALL
-	SELECT 0, ''
-	ORDER BY ChildName
+{% raw %}
+    SELECT ChildId, ChildName
+    FROM customtable_Children
+    WHERE ParentID = {% CurrentDocument.GetValue("ParentId") #%}
+    UNION ALL
+    SELECT 0, ''
+    ORDER BY ChildName
+{% endraw %}
 
 In the above example there would be a dropdown setup to list parents.  After the parent is selected, the children of that parent would load in the second dropdown.  You should also set the dependent field settings to postback on change of the parents, and possibly show/hide the child dropdown as needed. 
 

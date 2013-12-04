@@ -30,25 +30,69 @@ In `CMSFormControls/Basic/DropDownListControl.ascx.cs`, add the following using 
 
     using CMS.CMSHelper;
 
-And around line 325, add the following code to the LoadAndSelectList() method: 
+After the `Page_Load` method, around line 296, add a `OnPreRender` event handler to force the list to load the values when a field may have changed:
 
-    CMSContext.CurrentResolver.SetNamedSourceData("CurrentDocument", this.Data);
+    protected override void OnPreRender(EventArgs e)
+    {
+        base.OnPreRender(e);
+
+        if (IsPostBack && DependsOnAnotherField)
+        {
+            dropDownList.Items.Clear();
+
+            LoadAndSelectList();
+        }
+    }
+
+And around line 336, add the following code to the LoadAndSelectList() method to add macro handling support to the data source property for the SQL query: 
+
+    // Add macro parameters for the current value of each field
+    var replacements = new object[Form.FieldEditingControls.Count, 2];
+
+    var i = 0;
+
+    foreach (EditingFormControl field in Form.FieldEditingControls.Values)
+    {
+        replacements[i, 0] = field.FieldInfo.Name;
+        replacements[i, 1] = field.Value;
+
+        i++;
+    }
+
+    CMSContext.CurrentResolver.SourceParameters = replacements;
+
     query = CMSContext.CurrentResolver.ResolveMacros(query);
 
 The resulting method should look something like this:
 
+    /// <summary>
+    /// Loads and selects control.
+    /// </summary>
     private void LoadAndSelectList()
     {
         if (dropDownList.Items.Count == 0)
         {
             string options = ValidationHelper.GetString(GetValue("options"), null);
-            
+
             string query = ValidationHelper.GetString(GetValue("query"), null);
-            
-            CMSContext.CurrentResolver.SourceObject = this.Data;
-            CMSContext.CurrentResolver.SetNamedSourceData("CurrentDocument", this.Data);
+
+            // Add macro parameters for the current value of each field
+            var replacements = new object[Form.FieldEditingControls.Count, 2];
+
+            var i = 0;
+
+            foreach (EditingFormControl field in Form.FieldEditingControls.Values)
+            {
+                replacements[i, 0] = field.FieldInfo.Name;
+                replacements[i, 1] = field.Value;
+
+                i++;
+            }
+
+            CMSContext.CurrentResolver.SourceParameters = replacements;
+
             query = CMSContext.CurrentResolver.ResolveMacros(query);
-            
+
             try
             {
                 FormHelper.LoadItemsIntoList(options, query, dropDownList.Items, FieldInfo);
@@ -57,19 +101,19 @@ The resulting method should look something like this:
             {
                 DisplayException(ex);
             }
-            
+
             FormHelper.SelectSingleValue(selectedValue, dropDownList);
         }
     }
 
 ## An Example
 
-The code that we added simply sets the current document's data as a named source called `CurrentDocument`.  Now we can reference other fields in the data source property with a SQL query like this one:
+The code that we added simply adds all the fields' current values as macros, given the field name.  Now we can reference other fields in the data source property with a SQL query like this one:
 
 {% raw %}
     SELECT ChildId, ChildName
     FROM customtable_Children
-    WHERE ParentID = {% CurrentDocument.GetValue("ParentId") #%}
+    WHERE ParentID = {% ParentId #%}
     UNION ALL
     SELECT 0, ''
     ORDER BY ChildName

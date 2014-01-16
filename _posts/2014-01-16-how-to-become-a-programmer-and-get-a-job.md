@@ -139,7 +139,7 @@ The more you know the more efficient you can be.
 
 ### If something feels harder than it should be, it probably is
 
-I've seen people waste tons of time doing something the hard.  If they just took a few minutes to Google for a better solution, they will probably find one.
+I've seen people waste tons of time doing something the hard way.  If they just took a few minutes to Google for a better solution, they would probably find one and save a ton of time.
  
 ## Closing thoughts
 

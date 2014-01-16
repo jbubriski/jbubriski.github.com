@@ -95,13 +95,11 @@ A great way to learn about what is out there is to find other vocal programmers 
 
 ## For women
 
-I don't know much about being a woman, but I've heard that nowadays some companies are very happy to get more female developers to help balance things out.  There is a lot of information about why balance is an important thing but I'm not well-versed on the subject so I wont get into it.
-
-Some very awesome female developers named Sara Chipps and Vanessa Hurst co-founded an organization called [Girl Develop It](http://www.girldevelopit.com/ "Don't be shy. Develop it."), whose mission is as follows:
+I'm not going to try and address the issues that surround women in tech, since I have no place trying to do so.  However, I will make a point to mention some very awesome female developers named Sara Chipps and Vanessa Hurst that co-founded an organization called [Girl Develop It](http://www.girldevelopit.com/ "Don't be shy. Develop it."), whose mission is as follows:
 
 *"Girl Develop It is an international organization, that exists to provide affordable and accessible programs to women who want to learn software development through mentorship and hands-on instruction."*
 
-While they do charge for their classes, having hands-on workshops with support in a comfortable learning environment is probably invaluable. I think that I have heard there are other organizations catered towards women like [Black Girls Code](http://www.blackgirlscode.com/).
+While they do charge for their classes (Maybe they have free ones too?), having hands-on workshops with support in a comfortable learning environment is probably invaluable. I think that I have heard of some other organizations catered towards women like [Black Girls Code](http://www.blackgirlscode.com/).
 
 
 ## So what do YOU, John Bubriski, think I should do?

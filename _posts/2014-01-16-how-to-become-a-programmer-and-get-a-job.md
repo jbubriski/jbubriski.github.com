@@ -23,7 +23,7 @@ So many reasons...
 - You could make websites!
 - You could make mobile apps!
 - You could make desktop apps!
-- With the right job a programmer can work from home, or event work for themselves
+- With the right job a programmer can work from home, or even work for themselves
 - You will probably naturally learn more things about computers
 - Your friends will think you are some sort of internet wizard, when you explain why their favorite website is broken
 - YOU WILL ALWAYS HAVE A JOB

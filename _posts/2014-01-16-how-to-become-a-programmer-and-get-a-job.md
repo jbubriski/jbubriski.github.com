@@ -1,5 +1,5 @@
 ---
-date: '2014-01-13 8:00:00 -04:00'
+date: '2014-01-16 8:00:00 -04:00'
 layout: post
 title: How To Become A Programmer And Get A Job
 slug: how-to-become-a-programmer-and-get-a-job

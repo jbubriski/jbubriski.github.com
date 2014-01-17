@@ -95,7 +95,7 @@ A great way to learn about what is out there is to find other vocal programmers 
 
 ## For women
 
-I'm not going to try and address the issues that surround women in tech, since I have no place trying to do so.  However, I will make a point to mention some very awesome female developers named Sara Chipps and Vanessa Hurst that co-founded an organization called [Girl Develop It](http://www.girldevelopit.com/ "Don't be shy. Develop it."), whose mission is as follows:
+Some very awesome female developers named Sara Chipps and Vanessa Hurst that co-founded an organization called [Girl Develop It](http://www.girldevelopit.com/ "Don't be shy. Develop it."), whose mission is as follows:
 
 *"Girl Develop It is an international organization, that exists to provide affordable and accessible programs to women who want to learn software development through mentorship and hands-on instruction."*
 

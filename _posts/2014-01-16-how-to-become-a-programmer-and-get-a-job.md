@@ -63,6 +63,7 @@ No, I'm not talking about an online degree.  These days there is a lot to learn,
 
 - [Code Academy](http://www.codecademy.com/ "Code Academy - Learn to code interactively, for free.") (FREE)
 - [Khan Academy](https://www.khanacademy.org/ "Khan Academy - Start learning now. Completely free, forever.") (FREE)
+- [Coursera](https://www.coursera.org/ "Take the world's best courses, online, for free.") (FREE)
 - [Code School](https://www.codeschool.com/ "Code School - Learn by Doing. No setup. No hassle. Just learning.") ($, but some free, I did some courses and they seem good)
 - [Treehouse](http://teamtreehouse.com/ "Treehouse - Learn how to build websites & apps, write code or start a business.") ($, heard from a non-programmer friend that it is good)
 

@@ -29,6 +29,7 @@ Usage:
         // DataSet has data, do databinding
     }
 
+
 ## Getting a URL for a File or Image
 
 If you're storing images and files and you need to reference them in transformations or custom code, you can use the **GetFile.aspx** page to reference the actual file.
@@ -41,8 +42,20 @@ Or given a file GUID you can get the URL programmatically:
     
     string fileUrl = ResolveUrl(AttachmentManager.GetAttachmentUrl(attachmentGuid, nodeAlias));
 
+
 ## Documents
 
 Getting Documents from the Kentico API is easy.  You can use the TreeProvider, or you can use the static methods on the TreeHelper:
 
     DataSet ds = TreeHelper.GetDocuments(CMSContext.CurrentSiteName, path, TreeProvider.ALL_CULTURES, false, productTypes, "", "SKUName", TreeProvider.ALL_LEVELS, true, -1);
+
+
+## Redirecting to the First Child Document
+
+Here is a macro for automatically redirecting to the first child document.  Put it in Properties > Navigation > URL Redirection.
+
+	{%Documents[NodeAliasPath].Children[0].NodeAliasPath#%}
+
+For Kentico 7, you may need to add this web.config setting for the above macro to work.  It has to do with the [security checks around macros](http://devnet.kentico.com/forums?forumid=68&threadid=42978).
+
+	<add key="CMSCheckPermissionsForDocumentCollection" value="false" />

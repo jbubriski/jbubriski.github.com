@@ -54,7 +54,9 @@ Getting Documents from the Kentico API is easy.  You can use the TreeProvider, 
 
 Here is a macro for automatically redirecting to the first child document.  Put it in Properties > Navigation > URL Redirection.
 
+{% raw %}
 	{%Documents[NodeAliasPath].Children[0].NodeAliasPath#%}
+{% endraw %}
 
 For Kentico 7, you may need to add this web.config setting for the above macro to work.  It has to do with the [security checks around macros](http://devnet.kentico.com/forums?forumid=68&threadid=42978).
 

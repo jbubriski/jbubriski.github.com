@@ -1,9 +1,9 @@
 ---
 date: '2014-02-20 8:00:00 -04:00'
 layout: post
-title: Getting a Document or TreeNode from a URL
+title: Getting a Document or TreeNode from a URL in Kentico
 slug: getting-a-document-or-treenode-from-a-url
-description: If you have a URL and want the Document or TreeNode, I can help you!
+description: If you have a URL in Kentico and want the Document or TreeNode, I can help you!
 categories:
 - Programming
 tags:

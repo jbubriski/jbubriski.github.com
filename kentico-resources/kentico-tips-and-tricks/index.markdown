@@ -61,3 +61,30 @@ Here is a macro for automatically redirecting to the first child document.  Put 
 For Kentico 7, you may need to add this web.config setting for the above macro to work.  It has to do with the [security checks around macros](http://devnet.kentico.com/forums?forumid=68&threadid=42978).
 
 	<add key="CMSCheckPermissionsForDocumentCollection" value="false" />
+
+*Make sure that when you deploy a site using this mechanism that you update the macro signatures after pushing the site. Otherwise you will see some weird behavior like the macros rendering to nothing, and your menu links acting all weird.*
+
+## Custom (Transformation) Method for Getting URL from Node
+
+This is probably the "right" way to get the URL of a Node.  I reflected Kentico's code to extract the mechanism for getting the URL correctly.
+
+	public string GetNodeUrl(string stringNodeId)
+    {
+        var nodeId = int.Parse(stringNodeId);
+        var tree = new TreeProvider();
+
+        var treeNode = tree.SelectSingleNode(nodeId);
+
+        return TransformationHelper.HelperObject.GetDocumentUrl(CMSContext.CurrentSiteName, treeNode.NodeAliasPath, treeNode.DocumentUrlPath);
+    }
+
+If you add the above function to `public partial class CMSTransformation` class you can easily access it from a transformation:
+
+<%-- Gets the URL to the parent node %>
+<%# GetNodeUrl(EvalText("ParentNodeID")) %>
+
+That is reusable and looks a lot better than what was suggested by Kentico support:
+
+	<%# CMS.CMSHelper.CMSContext.GetDocumentUrl(CMS.DocumentEngine.DocumentHelper.GetDocument(CMS.GlobalHelper.ValidationHelper.GetInteger(Eval("NodeParentID"), 0), "en-US", new CMS.DocumentEngine.TreeProvider()).DocumentID) %>
+
+Just be careful how you use it!  **Avoid n + 1!**

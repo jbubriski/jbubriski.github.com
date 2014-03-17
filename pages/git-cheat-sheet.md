@@ -2,6 +2,19 @@
 
 Here the Git commands I use every day.  These will probably cover 90% of what you need to do with Git.
 
+## Status
+
+	# What's added/changed/deleted?
+	git status
+
+--
+
+	# What's changed/deleted?
+	git status -uno
+	
+	# Short for
+	git status --untracked-files=no
+
 ## Adding / Removing
 
 	# stage
@@ -80,6 +93,11 @@ Here the Git commands I use every day.  These will probably cover 90% of what yo
 
 	# Compare staged files to HEAD
 	git diff --staged
+
+--
+
+	# Compate a single file to HEAD
+	git diff HEAD path/to/file.cs
 
 
 ## Undoing

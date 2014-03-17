@@ -1,3 +1,13 @@
+---
+date: '2014-03-17 3:20:24 PM'
+layout: page
+slug: git-cheat-sheet
+status: publish
+title: Git Cheat Sheet
+description: A simple git cheat sheet for the most used commands.
+group: misc
+---
+
 # Git Cheat Sheet
 
 Here the Git commands I use every day.  These will probably cover 90% of what you need to do with Git.

@@ -12,7 +12,7 @@ tags:
 - jQuery Validation Plugin
 ---
 
-[The jQuery Validation Plugin](http://jqueryvalidation.org/ "Form validation with jQuery") is a great plugin that "just works".  It's so great that even [ASP.NET MVC](http://www.asp.net/mvc) uses it for client side validation! They have a nice JavaScript API for wiring up validation rules and messages, along with the [documentation](http://jqueryvalidation.org/documentation/ "jQuery Validation Plugin Documentation") for it.  However, they have an almost completely undocumented feature that makes use of HTML5 data attributes!
+[The jQuery Validation Plugin](http://jqueryvalidation.org/ "Form validation with jQuery") is a great plugin that "just works".  It's so great that even [ASP.NET MVC uses the plugin for client side validation](http://www.asp.net/mvc/tutorials/mvc-5/introduction/adding-validation)! They have a nice JavaScript API for wiring up validation rules and messages, along with the [documentation](http://jqueryvalidation.org/documentation/ "jQuery Validation Plugin Documentation") for it.  However, they have an almost completely undocumented feature that makes use of HTML5 data attributes!
 
 I think that I originally knew this feature existed because ASP.NET MVC uses jQuery Validate for "unobtrusive validation", meaning they don't inline JavaScript in your markup, but instead use data attributes.Apparently you can use any rule as a data attribute after version [1.11.0](https://github.com/jzaefferer/jquery-validation/issues/868).
 
@@ -20,7 +20,7 @@ I think that I originally knew this feature existed because ASP.NET MVC uses jQu
 
 If you have no idea what I'm talking about here is a super simple example of the jQuery Validation Plugin on JS Fiddle:
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/jbubriski/SLXhR/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/jbubriski/SLXhR/embedded/html,js,resources,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 [and a link to the JS Fiddle](http://jsfiddle.net/jbubriski/SLXhR/).
 
@@ -67,18 +67,18 @@ By default the jQuery Validation Plugin will add it's owne messages, but you can
 
 Here are some examples:
 
-- Required - `data-msg-required="Madam/site, this field is required."`
-- Email - `data-msg-email="We need to spam you, please enter a valid email address."`
+- Required - `data-msg-required="Madam/sir, this field is required."`
+- Email - `data-msg-email="Let us spam you, enter a valid email address."`
 
 ## Full example:
 
 Here is a more complete example on JS Fiddle that shows different validators and messages being used:
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/YQgEq/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/YQgEq/1/embedded/html,js,resources,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-[and a link to the JS Fiddle](http://jsfiddle.net/jbubriski/YQgEq/2/)
+[and a link to the JS Fiddle](http://jsfiddle.net/jbubriski/YQgEq/2/).
 
-And here is the same info here, just in case:
+And here is the same code here, just in case:
 
 	<!DOCTYPE html>
 	<html>
@@ -107,6 +107,18 @@ And here is the same info here, just in case:
 			$('#validate-me-plz').validate();
 		</script>
 	</html>
+
+## How it works
+
+If you're interested in how it works, take a [look at core.js around line 928](https://github.com/jzaefferer/jquery-validation/blob/master/src/core.js#L928 "Look at the code that reads the data validation attributes.").  They simply use the jQuery `data()` method to check each element for all of the loaded validators.  They automatically covert the validator name in the data attribute name:
+
+	value = $element.data("rule" + method[ 0 ].toUpperCase() + method.substring( 1 ).toLowerCase());
+
+But where are the dashes?  I didn't realize it, but data attributes can (should?) be referenced via jQuery *without* their dashes.  Instead of the dashes you [Camel Case](http://en.wikipedia.org/wiki/CamelCase "iUseCamelCaseForLocalVariableNames") the data attribute name, without the "data-" prefix.  The above code results in something like this for the required rule:
+
+	value = $element.data("ruleRequired");
+
+which maps to the `data-rule-required` attribute.
 
 ## Rule List:
 

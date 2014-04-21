@@ -145,7 +145,7 @@ Here is a list of them that I compiled by looking at the source on GitHub.  I ma
 - data-rule-min="5"
 - data-rule-max="10"
 - data-rule-range="5,10"
-- data-rule-equalsto="#password"
+- data-rule-equalto="#password"
 - data-rule-remote="custom-validatation-endpoint.aspx"
 
 (Untested, additional, but should work)

@@ -43,7 +43,7 @@ Here is a link to the gist with the JS files for hiding the irrelevant Unity fil
 
 [https://gist.github.com/jbubriski/eba4bbeecccd5e4fc0ec](https://gist.github.com/jbubriski/eba4bbeecccd5e4fc0ec "Bookmarklet JS for hiding Unity files in GitHub diffs") 
 
-And here is the embeded gist:
+And here is the embedded gist:
 
 <script src="https://gist.github.com/jbubriski/eba4bbeecccd5e4fc0ec.js"></script>
 

@@ -47,7 +47,7 @@ And here is the embedded gist:
 
 {% gist eba4bbeecccd5e4fc0ec %}
 
-<script src="https://gist.github.com/jbubriski/eba4bbeecccd5e4fc0ec.js"></script>
+<script src="https://gist.github.com/jbubriski/eba4bbeecccd5e4fc0ec.js"> </script>
 
 ## Usage 
 

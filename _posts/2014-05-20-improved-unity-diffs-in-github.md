@@ -45,8 +45,6 @@ Here is a link to the gist with the JS files for hiding the irrelevant Unity fil
 
 And here is the embedded gist:
 
-{% gist eba4bbeecccd5e4fc0ec %}
-
 <script src="https://gist.github.com/jbubriski/eba4bbeecccd5e4fc0ec.js"> </script>
 
 ## Usage 

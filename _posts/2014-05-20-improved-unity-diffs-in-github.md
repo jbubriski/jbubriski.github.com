@@ -47,7 +47,7 @@ And here is the embeded gist:
 
 <script src="https://gist.github.com/jbubriski/eba4bbeecccd5e4fc0ec.js"></script>
 
-## Usage and 
+## Usage 
 
 A bookmarklet is a browser bookmark, but instead of it pointing to a URL, it points to some JavaScript that runs when you envoke the bookmark.  I have the usage details in the gist as well, but here is a simple test you can do with bookmarklets.
 

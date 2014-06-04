@@ -1,5 +1,5 @@
 ---
-date: '2014-05-20 8:00:00 -04:00'
+date: '2014-06-04 8:00:00 -04:00'
 layout: post
 title: Finding The Mobile App Development Option That's Right For You
 slug: finding-the-mobile-app-development-option-thats-right-for-you

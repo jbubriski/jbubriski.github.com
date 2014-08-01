@@ -30,7 +30,7 @@ Something about CloudFlare's optimizations seemed to be interfering with the [Di
 
 Image:
 
-![CloudFlare Performance Settings Page](assets/images/2014-08-01-how-to-fix-disqus-on-your-cloudflare-backed-site/cloudflare-performance-settings.png)
+![CloudFlare Performance Settings Page](/assets/images/2014-08-01-how-to-fix-disqus-on-your-cloudflare-backed-site/cloudflare-performance-settings.png)
 
 That's it.
 

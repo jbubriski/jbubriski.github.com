@@ -25,3 +25,13 @@ Another quick tip is to exclude disabled products from your search results if yo
     -NodeLinkedNodeID:[0 TO 999999999] AND SKUEnabled:true
 
 That's it!
+
+## Explanation
+
+If you're wondering what that funky syntax is, it's [Lucene Query Parser Syntax](http://lucene.apache.org/core/2_9_4/queryparsersyntax.html) (technically [Lucene.net](http://lucenenet.apache.org/), but I think the same syntax applies).  It basically says:
+
+- "-" - Exclude...
+- "NodeLinkedNodeID" - Documents (Nodes) where the NodeLinkedNodeID is...
+- ":[0 TO 999999999]" - Between 0 and 999999999.
+
+So if the NodeLinkedNodeID field has a number in it, it's a Linked Document and we want to exclude it.

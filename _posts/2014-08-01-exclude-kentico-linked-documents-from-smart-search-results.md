@@ -17,7 +17,7 @@ It's pretty easy.  Simply go into the Smart Search Results Web Part and set the 
 
 Image:
 
-![Kentico Smart Search Results Web Part Settings Dialog](/assets/images/2014-08-01-exclude-kentico-linked-documents-from-smart-search/smart-search-results-web-part-settings-dialog.png)
+![Kentico Smart Search Results Web Part Settings Dialog](/assets/images/2014-08-01-exclude-kentico-linked-documents-from-smart-search-results/smart-search-results-web-part-settings-dialog.png)
 
 
 Another quick tip is to exclude disabled products from your search results if you're using E-commerce:

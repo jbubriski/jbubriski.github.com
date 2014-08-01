@@ -26,6 +26,7 @@ Another quick tip is to exclude disabled products from your search results if yo
 
 That's it!
 
+
 ## Explanation
 
 If you're wondering what that funky syntax is, it's [Lucene Query Parser Syntax](http://lucene.apache.org/core/2_9_4/queryparsersyntax.html) (technically [Lucene.net](http://lucenenet.apache.org/), but I think the same syntax applies).  It basically says:
@@ -35,3 +36,8 @@ If you're wondering what that funky syntax is, it's [Lucene Query Parser Syntax]
 - ":[0 TO 999999999]" - Between 0 and 999999999.
 
 So if the NodeLinkedNodeID field has a number in it, it's a Linked Document and we want to exclude it.
+
+
+## Credit
+
+I originally found this [solution on the Kentico DevNet](http://devnet.kentico.com/forums/f55/fp15/t32334/exclude-linked-documents-from-search), posted by Juraj Ondrus, but I figured it would be good to have a stand alone post along with a deeper explanation of the solution.

@@ -13,7 +13,7 @@ tags:
 - Diffs
 ---
 
-At [Frag Castle Games](fragcastle.com "Frag Castle Games") we use a private [GitHub](http://github.com "GitHub") repo to store our source code for [Rock Kickass](http://rockkickass.com "Rock Kickass - a 2D platormer").  We use Branches and Pull Requests to build new features and incorporate them back into master.
+At [Frag Castle Games](http://fragcastle.com "Frag Castle Games") we use a private [GitHub](http://github.com "GitHub") repo to store our source code for [Rock Kickass](http://rockkickass.com "Rock Kickass - a 2D platormer").  We use Branches and Pull Requests to build new features and incorporate them back into master.
 
 ## The Problem
 

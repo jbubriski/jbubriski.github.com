@@ -25,7 +25,7 @@ I contacted support and they basically said I was shit outta luck!  They basical
 
 Better give up and tell the customer... right?
 
-Nope.  Screw them, let's fix it ourselves.
+Nope.  Screw the CMS vendor, let's fix it ourselves.
 
 So what does the AD import utility actually do?
 

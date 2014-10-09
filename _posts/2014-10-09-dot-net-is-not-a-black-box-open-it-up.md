@@ -76,9 +76,9 @@ Armed with the Reflexil plugin let's take a look at what I found:
 
 ![We found the IL](/assets/images/2014-10-09-dot-net-is-not-a-black-box-open-it-up/found-the-il.png)
 
-![Save the patched assembly](/assets/images/2014-10-09-dot-net-is-not-a-black-box-open-it-up/save-assembly-as.png)
-
 ![Edit the existing instruction](/assets/images/2014-10-09-dot-net-is-not-a-black-box-open-it-up/edit-existing-instruction.png)
+
+![Save the patched assembly](/assets/images/2014-10-09-dot-net-is-not-a-black-box-open-it-up/save-assembly-as.png)
 
 OK that's a lot of information, let's dissect the steps needed to follow along:
 
@@ -88,7 +88,7 @@ OK that's a lot of information, let's dissect the steps needed to follow along:
 4. Look for identifiers in the IL.  In this case we can see that there is the string `"Step2_ErrorConnectingDB"` in the C# code which appears directly in the IL.
 5. After finding the general are of the code, find the actual code in question.  In this case we can see that we're setting the `connectionResult` to `false` in C#.  In the IL we can see that the variable is being worked with on instruction 081.
 6. Analyze the details. IL does one thing at a time.  Instruction 081 is setting up the variable to be worked with.  Instruction 082 is setting it to false (0) with [`ldarg.0`](http://en.wikipedia.org/wiki/List_of_CIL_instructions).
-7. Make the change (shown in the second image).  Right-click on the instruction and select "Edit...".  Change it to [`ldarg.1`](http://en.wikipedia.org/wiki/List_of_CIL_instructions) (true, or the value 1).
+7. Make the change (shown in the third image).  Right-click on the instruction and select "Edit...".  Change it to [`ldarg.1`](http://en.wikipedia.org/wiki/List_of_CIL_instructions) (true, or the value 1).
 8. Save out the updated assembly.  In the tree view, right-click on the .exe and select "Save as..." and save the patched assembly.
 9. Take the rest of the day off.
 

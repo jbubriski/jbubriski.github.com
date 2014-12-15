@@ -88,3 +88,14 @@ That is reusable and looks a lot better than what was suggested by Kentico suppo
 	<%# CMS.CMSHelper.CMSContext.GetDocumentUrl(CMS.DocumentEngine.DocumentHelper.GetDocument(CMS.GlobalHelper.ValidationHelper.GetInteger(Eval("NodeParentID"), 0), "en-US", new CMS.DocumentEngine.TreeProvider()).DocumentID) %>
 
 Just be careful how you use it!  **Avoid n + 1!**
+
+
+## Reusable custom queries
+
+Instead of hard coding a query inside of a dropdownlist field or elsewhere, store it on a document type or custom table  and manage it in one place while reusing it in multiple places.
+
+1. Go to the Queries tab of a custom document type or custom table.
+2. Create the query.
+3. Reference it via a macro in other places via a macro:
+
+  {% Queries["customtable.customtablename.queryname"].QueryText #%}

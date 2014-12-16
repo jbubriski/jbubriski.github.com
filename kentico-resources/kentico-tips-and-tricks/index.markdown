@@ -98,4 +98,6 @@ Instead of hard coding a query inside of a dropdownlist field or elsewhere, stor
 2. Create the query.
 3. Reference it via a macro in other places via a macro:
 
+{% raw %}
   {% Queries["customtable.customtablename.queryname"].QueryText #%}
+{% endraw %}

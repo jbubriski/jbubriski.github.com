@@ -41,7 +41,7 @@ Grab a coworker and make sure that everything is correct.  Check the assembly na
 
 I'm not 100% on this one, but I think I remember seeing somewhere that you need to set your references to NOT require a specific version.
 
-![Setting the specific version property to false](\assets\images\2013-07-19-fixing-assembly-binding-redirect-errors\setting-specific-version-property-to-false.png)
+![Setting the specific version property to false](/assets/images/2013-07-19-fixing-assembly-binding-redirect-errors/setting-specific-version-property-to-false.png)
 
 ## Check the Namespace on the assemblyBinding element
 

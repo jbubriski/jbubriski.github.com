@@ -10,17 +10,21 @@
 	<title>{{ page.title }} - {{ site.title }}</title>
 {% else %}
 	<title>{{ site.title }}</title>
-{% endif %}	
+{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
 	<meta name="copyright" content="{{ site.author.name }}" />
-	<meta name="description" content="{{ page.description }}" />
+{% if page.description != null %}
+	<meta name="description" content="{{ page.description }}"/>
+{% else %}
+	<meta name="description" content="John Bubriski on Programming." />
+{% endif %}	
 	<!-- Facebook Open Graph it's me -->
 	<meta property="og:site_name" content="Johnny Code"/>
 {% if page.title != null %}
 	<meta property="og:title" content="{{ page.title }} - {{ site.title }}"/>
 {% else %}
 	<meta property="og:title" content="{{ site.title }}"/>
-{% endif %}	
+{% endif %}
 {% if page.description != null %}
 	<meta property="og:description" content="{{ page.description }}"/>
 {% else %}

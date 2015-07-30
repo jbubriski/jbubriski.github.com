@@ -6,24 +6,37 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>{{ page.title }}</title>
+{% if page.title != null %}
+	<title>{{ page.title }} - {{ site.title }}</title>
+{% else %}
+	<title>{{ site.title }}</title>
+{% endif %}	
 	<meta name="author" content="{{ site.author.name }}">
 	<meta name="copyright" content="{{ site.author.name }}" />
-	<meta name="description" content="John Bubriski on Programming." />
-
+	<meta name="description" content="{{ page.description }}" />
+	<!-- Facebook Open Graph it's me -->
+	<meta property="og:site_name" content="Johnny Code"/>
+{% if page.title != null %}
+	<meta property="og:title" content="{{ page.title }} - {{ site.title }}"/>
+{% else %}
+	<meta property="og:title" content="{{ site.title }}"/>
+{% endif %}	
+{% if page.description != null %}
+	<meta property="og:description" content="{{ page.description }}"/>
+{% else %}
+	<meta property="og:description" content="John Bubriski on Programming." />
+{% endif %}	
 	<!-- proof it's me -->
 	<link rel="me" type="text/html" href="http://plus.google.com/114609930950618152217?rel=me"/>
 	<link rel="me" type="text/html" href="http://twitter.com/johnbubriski"/>
-
 	<!-- icons for browsers and phones -->
 	<link rel="shortcut icon" href="/favicon.ico">
-
+	<!-- CSS -->
 	<link href='{{ ASSET_PATH }}/css/all.min.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
   {% include JB/analytics %}
 </head>
 <body>
-
 <div id="page" class="hentry">
 	<header class="the-header">
 		<div class="unit-head">
@@ -36,8 +49,8 @@
 						<li class="page"><a href="/pages.html">pages</a></li>
 						<li class="category"><a href="/categories.html">categories</a></li>
 						<li class="tag"><a href="/tags.html">tags</a></li>
-                        <li class="about"><a href="/about/index.html">About</a></li>
-                        <li class="contact"><a href="/contact/index.html">Contact</a></li>
+						<li class="about"><a href="/about/index.html">About</a></li>
+						<li class="contact"><a href="/contact/index.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>

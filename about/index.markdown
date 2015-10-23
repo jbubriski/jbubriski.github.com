@@ -13,9 +13,9 @@ I'm a well rounded full-stack developer currently specializing in C#, JavaScript
 
 ## Current employment and activites
 
-I'm currently a Senior Web Developer at [Wakefly](http://www.wakefly.com).
+I'm currently a Web Developer at [Stack Overflow](http://stackoverflow.com/)!
 
-I also build indie games at [Frag Castle Games](http://fragcastle.com) with [Jared Barboza](http://codeimpossible.com).  We have an upcoming title currently undergoing  development.
+I also build indie games at [Frag Castle Games](http://fragcastle.com) with [Jared Barboza](http://codeimpossible.com).  We have an upcoming title currently undergoing development.
 
 
 ## Programming languages
@@ -50,8 +50,14 @@ I was a speaker at the 2012 [MonkeySpace conference](http://monkeyspace.org/) in
 ## Work history
 
 
+### Stack Overflow
+**Web Devloper, April 2015 - Present**
+
+Worked as a web developer on the internal development team building tools for Sales, Marketing and HR.  Mostly worked with C#, ASP.NET MVC, SQL Server, Angular, CoffeeScript, JavaScript, and a myriad of third party API's.
+
+
 ### Wakefly
-**Senior Software Developer, September 2008 - Present**
+**Senior Software Developer, September 2008 - April 2015**
 
 Installed, configured, and developed functionality for various CMS's like Kentico. Certified as a developer and trainer for [Kentico](http://www.kentico.com)! Also worked with other CMS's like Sitecore, Sitefinty, DotNetNuke, Ektron, Drupal, Joomla.  Also developed custom web applications.
 

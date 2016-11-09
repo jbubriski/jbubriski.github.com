@@ -1,3 +1,16 @@
+---
+date: '2016-11-08 9:00:00 -04:00'
+layout: post
+title: Procedural Generation 101 (for games)
+slug: procedural-generation-101-for-games
+description: Procedural Generation is awesome and you need some in your game!
+categories:
+- Programming
+- Game Dev
+tags:
+- Procedural Generation
+- Game Dev
+---
 # Procedural Generation 101 (for games)
 
 > "Awwww man I need some of that Procedural Generation in my game"

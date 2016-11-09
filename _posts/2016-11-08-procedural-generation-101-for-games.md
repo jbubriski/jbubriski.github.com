@@ -176,7 +176,7 @@ And if you're in the Boston area on Novermber 19th, I'll be speaking at the [Bos
 
 - [PROCJAM - Procedural Generation Game Jam](http://www.procjam.com/)
 - [PROCJAM 2016 Talks](https://www.youtube.com/watch?v=3wcpLwvBTYo)
-- [How (and Why) Spelunky Makes its Own Levels | Game Maker's Toolkit](https://www.youtube.com/watch?v=Uqk5Zf0tw3o)
+- [How \(and Why\) Spelunky Makes its Own Levels | Game Maker's Toolkit](https://www.youtube.com/watch?v=Uqk5Zf0tw3o)
 - [Generating Fantasy Maps](http://mewo2.com/notes/terrain/)
 - [Making maps with noise functions](http://www.redblobgames.com/maps/terrain-from-noise/)
 - [PerlinNoise function in Unity](https://docs.unity3d.com/ScriptReference/Mathf.PerlinNoise.html)

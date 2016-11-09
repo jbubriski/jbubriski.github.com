@@ -11,8 +11,6 @@ tags:
 - Procedural Generation
 - Game Dev
 ---
-# Procedural Generation 101 (for games)
-
 > "Awwww man I need some of that Procedural Generation in my game"
 >
 > \- anonymous totally not made up indie game developer

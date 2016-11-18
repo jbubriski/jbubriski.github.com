@@ -181,3 +181,5 @@ And if you're in the Boston area on Novermber 19th, I'll be speaking at the [Bos
 - [Making maps with noise functions](http://www.redblobgames.com/maps/terrain-from-noise/)
 - [PerlinNoise function in Unity](https://docs.unity3d.com/ScriptReference/Mathf.PerlinNoise.html)
 - [Unity Manual - Adding Random Gameplay Elements](https://docs.unity3d.com/Manual/RandomNumbers.html)
+- [Procedurally Generate Your Own Music](http://abundant-music.com/)
+- [Darwin Tunes - Procedurally Generated Music](http://darwintunes.org/welcome)

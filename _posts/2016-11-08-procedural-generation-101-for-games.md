@@ -174,6 +174,7 @@ And if you're in the Boston area on Novermber 19th, I'll be speaking at the [Bos
 
 ~~Dogs on the internet~~ People have done a lot of cool stuff with procedural generation.  Check out these awesome examples:
 
+- [Unity Proc Gen Sample Project on GitHub](https://github.com/jbubriski/unity-proc-gen)
 - [PROCJAM - Procedural Generation Game Jam](http://www.procjam.com/)
 - [PROCJAM 2016 Talks](https://www.youtube.com/watch?v=3wcpLwvBTYo)
 - [How \(and Why\) Spelunky Makes its Own Levels \| Game Maker's Toolkit](https://www.youtube.com/watch?v=Uqk5Zf0tw3o)

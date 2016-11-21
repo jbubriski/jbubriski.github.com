@@ -13,7 +13,7 @@ tags:
 ---
 
 <div style="padding: 10px; color: #8a6d3b; background-color: #fcf8e3; border-color: #faebcc;">
-[Download the sample project: Unity Proc Gen Sample Project on GitHub](https://github.com/jbubriski/unity-proc-gen)
+  <a href="https://github.com/jbubriski/unity-proc-gen">Download the sample project: Unity Proc Gen Sample Project on GitHub</a>
 </div>
 
 > "Awwww man I need some of that Procedural Generation in my game"

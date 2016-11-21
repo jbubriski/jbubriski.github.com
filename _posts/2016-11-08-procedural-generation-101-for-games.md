@@ -12,9 +12,12 @@ tags:
 - Game Dev
 ---
 
-## **********************************************************************
-## [Download the sample project: Unity Proc Gen Sample Project on GitHub](https://github.com/jbubriski/unity-proc-gen)
-## **********************************************************************
+**********************************************************************
+------
+[Download the sample project: Unity Proc Gen Sample Project on GitHub](https://github.com/jbubriski/unity-proc-gen)
+------
+**********************************************************************
+------
 
 > "Awwww man I need some of that Procedural Generation in my game"
 >

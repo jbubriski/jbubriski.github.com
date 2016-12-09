@@ -24,13 +24,20 @@ Kinect and I got to build something with one and take it home.  Despite some bad
 
 ## Schedule
 
-
 The event consisted of general powerpoint presentations, Q&A, and hardware setup/configuration in the morning.  The second half of the day was spent testing various demo projects.
 
 There were some issues with getting setup since one of the installers was downloading large files.  Since they were like 50 people all downloading over wifi it took a while.  I also had issues getting the Intel System Studio fully installed.  However, I was able to use the Intel XDK just fine, and that is what the rest of the examples used anyway.
 
 This was the first Joule workshop they've done so there were some rough edges.  Mainly, presentations were a bit dry, although the presenter (Grace) was super knowledgable about the platform.  There were also 3 Intel Developer Evangelists (who don't work for Intel) onsite helping out with issues and answering any questions.  Some of my hardware had crazily bent pins, but I was able to bend them back without issue.  There was also a missing fan bracket that they acknowledged, but that wasn't a big deal. 
 
+## Intel RealSense Camera R200
+
+We got to use the Intel RealSense Camera R200 with the Joule.
+
+- 1080p 
+- 3 cameras providing RGB (color) and stereoscopic IR to produce depth
+- Inside range of 0.5m to 2.5m
+- Outside range up to 10m
 
 ## Camera Features
 

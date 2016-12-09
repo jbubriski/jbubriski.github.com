@@ -13,18 +13,21 @@ tags:
 - Intel RealSense Camera
 - Hackathon
 ---
-So I somehow got invited to an Intel Joule™ Workshop.
+So I somehow got invited to an Intel Joule™ Workshop!
 
-*Disclaimer: The event was free, food/drink was provided, and I was given ________.  I also wasn't asked to do this review.*
+*Disclaimer: The event was free, food/drink was provided, and I was given ________.  However I wasn't asked to do this review.*
 
-TLDR: The Intel Joule™ is ________________
+TLDR: The Intel Joule™ Compute Module is a tiny computer with a lot of horsepower.  It's goal ________________
 
 Kinect and I got to build something with one and take it home.  Despite some bad logistics, the event was pretty good and it was fun to work with a Kinect-like device.
 
 
 ## Schedule
 
+This was the first Joule workshop they've done so there were some rough edges.
+
 The event consisted of slide presentations, questions, and playing with demos in the first half of the morning, then on to code demo in the second half.  After lunch we were free to create our own projects until around 5:30.  Then we demoed the projects and they judged them and gave out prizes (I Didn’t win anything).
+
 
 
 ## Camera Features

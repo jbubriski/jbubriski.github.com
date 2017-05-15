@@ -30,7 +30,9 @@ Here is a collection of all the programming / IT related resources I use.  Feel
 
 **[Scott Guthrie's Blog](http://weblogs.asp.net/scottgu/default.aspx) ("The Gu")**
 
-**[ You've Been Haacked](http://haacked.com) (Phil Haack)**
+**[You've Been Haacked](http://haacked.com) (Phil Haack)**
+
+**[Official .NET Blog](https://blogs.msdn.microsoft.com/dotnet/)**
 
 
 ## Podcasts

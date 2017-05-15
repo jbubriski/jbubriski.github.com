@@ -45,17 +45,10 @@ Here is a collection of all the programming / IT related resources I use.  Feel
 - **[Stack Exchange Podcast](http://blog.stackoverflow.com/category/podcasts/) (Jeff Atwood, Joel Spolsky, Alex Miller)**
 - **[Stackoverflow Podcast](http://itc.conversationsnetwork.org/series/stackoverflow.html) (Now the Stack Exchange Podcast above)**
 - **[.NET Rocks](http://www.dotnetrocks.com/) (Carl Franklin, Richard Campbell)**
-- **[Deep Fried Bytes](http://deepfriedbytes.com/) (Keith Elder, Chris Woodruff)**
 - **[Yet Another Podcast](http://jesseliberty.com/podcast/) (Jesse Liberty)**
 - **[Traffic and Weather](http://trafficandweather.io/) (John Sheehan (Runscope), Steve Marx (Dropbox))**
-- **[Get Up And Code](http://getupandcode.com/) (John Somnez, Iris Classon)**
-- **[HNpod](http://hnpod.com/) (Michael Mahemoff, having been started by Alex Muir)**
-- [The JavaScript Show](http://javascriptshow.com/) (Peter Coope, Jason Seifer)
-- [The Smackdown](http://www.mswhs.com/2010/02/developer-smackdown-podcast-on-whs/) (Mark Nichols, Chris Sells)
 - [Software Engineering Radio](http://www.se-radio.net/)
-- [yayQuery](http://yayquery.com/)
-- [The Official jQuery Podcast](http://podcast.jquery.com/)
-- [The DevShow](http://5by5.tv/devshow) (Now Retired) (Dan Benjamin, Jason Seifer)
+- [Get Up And Code](http://getupandcode.com/) (John Somnez, Iris Classon)
 
 
 ### IT
@@ -64,7 +57,7 @@ Here is a collection of all the programming / IT related resources I use.  Feel
 
 ### General Tech
 
-- **[Ratchet and The Geek]() (Scott Hanselman, Luvie)**
+- **[Ratchet and The Geek](http://ratchetandthegeek.com/) (Scott Hanselman, Luvie)**
 - [Security Now](http://www.grc.com/securitynow.htm) (Steve Gibson, Leo Laporte)
 
 ### Game Dev
@@ -82,3 +75,13 @@ Here is a collection of all the programming / IT related resources I use.  Feel
 
 
 
+<!-- Defunct Podcasts -->
+<!--
+- **[Deep Fried Bytes](http://deepfriedbytes.com/) (Keith Elder, Chris Woodruff)**
+- **[HNpod](http://hnpod.com/) (Michael Mahemoff, having been started by Alex Muir)**
+- [The JavaScript Show](http://javascriptshow.com/) (Peter Coope, Jason Seifer)
+- [The Smackdown](http://www.mswhs.com/2010/02/developer-smackdown-podcast-on-whs/) (Mark Nichols, Chris Sells)
+- [yayQuery](http://yayquery.com/)
+- [The Official jQuery Podcast](http://podcast.jquery.com/)
+- [The DevShow](http://5by5.tv/devshow) (Now Retired) (Dan Benjamin, Jason Seifer)
+-->

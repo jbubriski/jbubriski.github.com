@@ -21,6 +21,8 @@ Here is a collection of all the programming / IT related resources I use.  Feel
 
 **[Coding Horror](http://www.codinghorror.com/blog/) (Jeff Atwood)**
 
+**[Troy Hunt's Blog](https://www.troyhunt.com/) (Troy Hunt)**
+
 
 ### Microsoft / ASP.NET
 

@@ -11,9 +11,9 @@ tags:
 - Extension Methods
 ---
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  
 Updated!!! A commenter asked for the area name, so I've included that in the code as well.  
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 Luckily I've been back in ASP.NET MVC lately!  On a new project I needed to check the current controller and actions for highlighting the current item in the menu. SO I dug up some of my custom code that seems to still apply to the latest ASP.NET MVC.
 

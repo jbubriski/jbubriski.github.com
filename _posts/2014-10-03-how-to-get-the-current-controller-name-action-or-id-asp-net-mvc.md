@@ -11,6 +11,10 @@ tags:
 - Extension Methods
 ---
 
+*******************************
+Updated!!! A commenter asked for the area name, so I've included that in the code as well.
+*******************************
+
 Luckily I've been back in ASP.NET MVC lately!  On a new project I needed to check the current controller and actions for highlighting the current item in the menu. SO I dug up some of my custom code that seems to still apply to the latest ASP.NET MVC.
 
 ## Usage
@@ -20,6 +24,7 @@ From your view you can simply use the extension methods off the `Html` object:
     @Html.Controller();
     @Html.Action();
     @Html.Id();
+    @Html.Area();
 
 ## Show me the Code!
 
@@ -30,32 +35,42 @@ Here it is:
         public static string Id(this HtmlHelper htmlHelper)
         {
             var routeValues = HttpContext.Current.Request.RequestContext.RouteData.Values;
-    
+            
             if (routeValues.ContainsKey("id"))
                 return (string)routeValues["id"];
             else if (HttpContext.Current.Request.QueryString.AllKeys.Contains("id"))
                 return HttpContext.Current.Request.QueryString["id"];
-    
+            
             return string.Empty;
         }
-    
+        
         public static string Controller(this HtmlHelper htmlHelper)
         {
             var routeValues = HttpContext.Current.Request.RequestContext.RouteData.Values;
-    
+            
             if (routeValues.ContainsKey("controller"))
                 return (string)routeValues["controller"];
-    
+            
             return string.Empty;
         }
-    
+        
         public static string Action(this HtmlHelper htmlHelper)
         {
             var routeValues = HttpContext.Current.Request.RequestContext.RouteData.Values;
-    
+            
             if (routeValues.ContainsKey("action"))
                 return (string)routeValues["action"];
-    
+            
+            return string.Empty;
+        }
+        
+        public static string Area(this HtmlHelper htmlHelper)
+        {
+            var dataTokens = HttpContext.Current.Request.RequestContext.RouteData.DataTokens;
+            
+            if (dataTokens.ContainsKey("area"))
+                return (string)dataTokens["area"];
+            
             return string.Empty;
         }
     }

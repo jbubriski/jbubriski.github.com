@@ -110,7 +110,7 @@
         tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight);
         document.body.removeChild(ad);
     });
-  ga('create', '{{ site.JB.analytics.google.tracking_id }}', auto);
+  ga('create', '{{ site.JB.analytics.google.tracking_id }}', 'auto');
   ga('require', 'adblockTracker', {dimensionIndex: 1});
   ga('send', 'pageview');
 </script>

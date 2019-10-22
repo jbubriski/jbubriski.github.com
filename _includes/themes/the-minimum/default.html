@@ -108,7 +108,7 @@
         ad.style.top = '-1px';
         ad.style.height = '1px';
         document.body.appendChild(ad);
-        tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight ? "0" : "1");
+        tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight ? "1" : 0");
         document.body.removeChild(ad);
     });
   ga('create', '{{ site.JB.analytics.google.tracking_id }}', 'auto');
